@@ -1,0 +1,91 @@
+---- Minecraft Crash Report ----
+// I blame Dinnerbone.
+
+Time: 2/21/13 4:47 PM
+Description: Ticking entity
+
+java.lang.NullPointerException
+	at net.minecraft.src.Entity.moveEntity(Entity.java:704)
+	at net.minecraft.src.EntityLiving.moveEntityWithHeading(EntityLiving.java:1445)
+	at net.minecraft.src.EntityLiving.onLivingUpdate(EntityLiving.java:1733)
+	at net.minecraft.src.EntityAgeable.onLivingUpdate(EntityAgeable.java:98)
+	at net.minecraft.src.EntityAnimal.onLivingUpdate(EntityAnimal.java:39)
+	at net.minecraft.src.EntityWolf.onLivingUpdate(EntityWolf.java:177)
+	at net.minecraft.src.EntityLiving.onUpdate(EntityLiving.java:785)
+	at net.minecraft.src.EntityWolf.onUpdate(EntityWolf.java:193)
+	at net.minecraft.src.World.updateEntityWithOptionalForce(World.java:2147)
+	at net.minecraft.src.World.updateEntity(World.java:2117)
+	at net.minecraft.src.World.updateEntities(World.java:1968)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1964)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:861)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:786)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.src.Entity.moveEntity(Entity.java:704)
+	at net.minecraft.src.EntityLiving.moveEntityWithHeading(EntityLiving.java:1445)
+	at net.minecraft.src.EntityLiving.onLivingUpdate(EntityLiving.java:1733)
+	at net.minecraft.src.EntityAgeable.onLivingUpdate(EntityAgeable.java:98)
+	at net.minecraft.src.EntityAnimal.onLivingUpdate(EntityAnimal.java:39)
+	at net.minecraft.src.EntityWolf.onLivingUpdate(EntityWolf.java:177)
+	at net.minecraft.src.EntityLiving.onUpdate(EntityLiving.java:785)
+	at net.minecraft.src.EntityWolf.onUpdate(EntityWolf.java:193)
+	at net.minecraft.src.World.updateEntityWithOptionalForce(World.java:2147)
+	at net.minecraft.src.World.updateEntity(World.java:2117)
+
+-- Entity being ticked --
+Details:
+	Entity Type: Wolf (net.minecraft.src.EntityWolf)
+	Entity ID: 2722813
+	Name: Wolf
+	Exact location: -253.34, 59.00, 241.84
+	Block location: World: (-254,59,241), Chunk: (at 2,3,1 in -16,15; contains blocks -256,0,240 to -241,255,255), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Momentum: 0.00, -0.08, 0.00
+Stacktrace:
+	at net.minecraft.src.World.updateEntities(World.java:1968)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 18 total; [EntityClientPlayerMP['diamondsplox'/2757235, l='MpServer', x=-248.08, y=61.64, z=248.23], EntityOtherPlayerMP['lord123abc'/2756592, l='MpServer', x=-259.34, y=80.00, z=252.53], EntityOtherPlayerMP['BLIZZARDSTORM98'/2742022, l='MpServer', x=-250.03, y=67.41, z=262.63], EntityOtherPlayerMP['Siick_Era'/2750881, l='MpServer', x=-252.44, y=62.16, z=260.31], EntityOtherPlayerMP['bradystringer'/2756422, l='MpServer', x=-248.66, y=60.00, z=256.69], EntityOtherPlayerMP['Cenalock54'/2754762, l='MpServer', x=-256.94, y=63.50, z=249.41], EntityOtherPlayerMP['Wille_Craft'/2743357, l='MpServer', x=-255.88, y=59.00, z=262.75], EntityOtherPlayerMP['donjosh2000'/2716334, l='MpServer', x=-255.47, y=59.00, z=244.03], EntityOtherPlayerMP['woodyBriggs'/2657782, l='MpServer', x=-244.81, y=59.00, z=249.06], EntityOtherPlayerMP['Kittengirl13'/2756185, l='MpServer', x=-253.66, y=59.00, z=244.91], EntityOtherPlayerMP['pepsichic'/2718763, l='MpServer', x=-243.44, y=113.75, z=243.47], EntityOtherPlayerMP['2002creeper'/2748561, l='MpServer', x=-255.13, y=64.00, z=249.28], EntityOtherPlayerMP['buddypop'/2750862, l='MpServer', x=-220.22, y=50.00, z=255.69], EntityOtherPlayerMP['TheDonutSkater'/2739908, l='MpServer', x=-218.44, y=52.02, z=209.63], EntityOtherPlayerMP['LegendaryCraft_'/2710088, l='MpServer', x=-244.11, y=60.07, z=259.05], EntityOtherPlayerMP['NeverShoutNo'/2746388, l='MpServer', x=-276.38, y=44.00, z=211.47], EntityOtherPlayerMP['ELKDEWULF'/2744490, l='MpServer', x=-205.50, y=52.41, z=261.63], EntityOtherPlayerMP['pronoah'/2671761, l='MpServer', x=-255.50, y=59.00, z=246.50]]
+	Chunk stats: MultiplayerChunkCache: 121
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-256,59,244), Chunk: (at 0,3,4 in -16,15; contains blocks -256,0,240 to -241,255,255), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 180744804 game time, 180898329 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 48 total; [EntityClientPlayerMP['diamondsplox'/2757235, l='MpServer', x=-248.08, y=61.64, z=248.23], EntityOtherPlayerMP['LegendaryCraft_'/2710088, l='MpServer', x=-244.11, y=60.07, z=259.05], EntityOtherPlayerMP['lord123abc'/2756592, l='MpServer', x=-259.34, y=80.00, z=252.53], EntityOtherPlayerMP['TheDonutSkater'/2739908, l='MpServer', x=-218.44, y=52.02, z=209.63], EntityOtherPlayerMP['ELKDEWULF'/2744490, l='MpServer', x=-205.50, y=52.41, z=261.63], EntityItemFrame['entity.ItemFrame.name'/156, l='MpServer', x=-234.50, y=54.50, z=279.94], EntityItemFrame['entity.ItemFrame.name'/157, l='MpServer', x=-235.50, y=54.50, z=279.94], EntityOtherPlayerMP['woodyBriggs'/2657782, l='MpServer', x=-244.81, y=59.00, z=249.06], EntityItemFrame['entity.ItemFrame.name'/158, l='MpServer', x=-236.50, y=54.50, z=279.94], EntityOtherPlayerMP['creeperkakes'/2695924, l='MpServer', x=-257.13, y=59.00, z=244.28], EntityOtherPlayerMP['lord123abc'/2756592, l='MpServer', x=-259.34, y=80.00, z=252.53], EntityOtherPlayerMP['BLIZZARDSTORM98'/2742022, l='MpServer', x=-250.03, y=67.41, z=262.63], EntityOtherPlayerMP['bradystringer'/2756422, l='MpServer', x=-248.66, y=60.00, z=256.69], EntityOtherPlayerMP['Siick_Era'/2750881, l='MpServer', x=-252.44, y=62.16, z=260.31], EntityOtherPlayerMP['Wille_Craft'/2743357, l='MpServer', x=-255.88, y=59.00, z=262.75], EntityOtherPlayerMP['pronoah'/2671761, l='MpServer', x=-255.50, y=59.00, z=246.50], EntityOtherPlayerMP['donjosh2000'/2716334, l='MpServer', x=-255.47, y=59.00, z=244.03], EntityOtherPlayerMP['bradystringer'/2756422, l='MpServer', x=-248.66, y=60.00, z=256.69], EntityOtherPlayerMP['Cenalock54'/2754762, l='MpServer', x=-256.94, y=63.50, z=249.41], EntityOtherPlayerMP['GNian12'/2675452, l='MpServer', x=-179.09, y=49.41, z=262.09], EntityOtherPlayerMP['pepsichic'/2718763, l='MpServer', x=-243.44, y=113.75, z=243.47], EntityOtherPlayerMP['2002creeper'/2748561, l='MpServer', x=-255.13, y=64.00, z=249.28], EntityOtherPlayerMP['woodyBriggs'/2657782, l='MpServer', x=-244.81, y=59.00, z=249.06], EntityOtherPlayerMP['Kittengirl13'/2756185, l='MpServer', x=-253.66, y=59.00, z=244.91], EntityOtherPlayerMP['pepsichic'/2718763, l='MpServer', x=-243.44, y=113.75, z=243.47], EntityItemFrame['entity.ItemFrame.name'/163, l='MpServer', x=-192.06, y=23.50, z=311.50], EntityOtherPlayerMP['buddypop'/2750862, l='MpServer', x=-220.22, y=50.00, z=255.69], EntityOtherPlayerMP['Kittengirl13'/2756185, l='MpServer', x=-253.66, y=59.00, z=244.91], EntityItemFrame['entity.ItemFrame.name'/165, l='MpServer', x=-192.06, y=25.50, z=311.50], EntityItemFrame['entity.ItemFrame.name'/164, l='MpServer', x=-192.06, y=24.50, z=311.50], EntityOtherPlayerMP['flowtaspie123'/2757583, l='MpServer', x=-259.50, y=136.59, z=247.50], EntityOtherPlayerMP['2002creeper'/2748561, l='MpServer', x=-255.13, y=64.00, z=249.28], EntityWolf['Wolf'/2686715, l='MpServer', x=-265.16, y=58.00, z=263.00], EntityWolf['Wolf'/-2147483553, l='MpServer', x=1824.53, y=24.85, z=-3985.59], EntityOtherPlayerMP['ELKDEWULF'/2744490, l='MpServer', x=-205.50, y=52.41, z=261.63], EntityOtherPlayerMP['buddypop'/2750862, l='MpServer', x=-220.22, y=50.00, z=255.69], EntityOtherPlayerMP['donjosh2000'/2716334, l='MpServer', x=-255.47, y=59.00, z=244.03], EntityOtherPlayerMP['Cenalock54'/2754762, l='MpServer', x=-256.94, y=63.50, z=249.41], EntityOtherPlayerMP['LegendaryCraft_'/2710088, l='MpServer', x=-244.11, y=60.07, z=259.05], EntityWolf['Wolf'/2722813, l='MpServer', x=-253.34, y=59.00, z=241.84], EntityOtherPlayerMP['BLIZZARDSTORM98'/2742022, l='MpServer', x=-250.03, y=67.41, z=262.63], EntityOtherPlayerMP['TheDonutSkater'/2739908, l='MpServer', x=-218.44, y=52.02, z=209.63], EntityOtherPlayerMP['pronoah'/2671761, l='MpServer', x=-255.50, y=59.00, z=246.50], EntitySheep['Sheep'/-2147483550, l='MpServer', x=-7396.09, y=63.34, z=8593.35], EntityOtherPlayerMP['Wille_Craft'/2743357, l='MpServer', x=-255.88, y=59.00, z=262.75], EntityOtherPlayerMP['NeverShoutNo'/2746388, l='MpServer', x=-276.38, y=44.00, z=211.47], EntityOtherPlayerMP['Siick_Era'/2750881, l='MpServer', x=-252.44, y=62.16, z=260.31], EntityOtherPlayerMP['NeverShoutNo'/2746388, l='MpServer', x=-276.38, y=44.00, z=211.47]]
+	Retry entities: 0 total; []
+Stacktrace:
+	at net.minecraft.src.WorldClient.addWorldInfoToCrashReport(WorldClient.java:405)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2546)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:802)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.4.7
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_03, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 872857008 bytes (832 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 13635 (763560 bytes; 0 MB) allocated, 114 (6384 bytes; 0 MB) used
+	Suspicious classes: Start[net.minecraft.src.IPlayerUsage, MinecraftFakeLauncher, ThreadShutdown, ...]
+	IntCache: cache: 0, tcache: 0, allocated: 3, tallocated: 63
+	LWJGL: 2.4.2
+	OpenGL: GeForce GTX 560/PCIe/SSE2 GL version 4.2.0, NVIDIA Corporation
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Texture Pack: Default
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 2276 (127456 bytes; 0 MB) allocated, 73 (4088 bytes; 0 MB) used

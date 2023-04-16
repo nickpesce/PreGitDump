@@ -1,0 +1,67 @@
+import java.awt.Graphics;
+
+
+
+public class SceneWallSouth extends Scene {
+
+	public static final int
+	CLOSET_KEY = 0,
+	CLOSET = 1;
+	
+	private boolean closetLocked;
+	private Item closetKey;
+	
+	public SceneWallSouth(Game game) 
+	{
+		super(game);
+		setBackground("WallSouth.jpg");
+		addClickBox(910, 290, 15, 15, CLOSET_KEY);
+		addClickBox(20, 191,  60,  257,  CLOSET);
+		setSurroundings(Game.SceneName.ceiling, Game.SceneName.west, Game.SceneName.center, Game.SceneName.east);
+		closetKey = new Item(Item.CLOSET_KEY);
+		closetLocked = true;
+	}
+
+	@Override
+	public
+	void onClickBoxPress(int id) 
+	{	
+		super.onClickBoxPress(id);
+		switch(id)
+		{
+		case CLOSET_KEY:
+			if(closetKey != null)
+			{
+				getGame().getInventory().add(closetKey);
+				closetKey = null;
+			}
+			break;
+		case CLOSET:
+			if(!closetLocked)
+				getGame().switchScene(Game.SceneName.closet);
+			break;
+		}
+	}
+	
+	@Override
+	public void itemDroppedInBox(Item item, int clickBoxId) 
+	{
+		super.itemDroppedInBox(item, clickBoxId);
+		if(item.getId() == Item.CLOSET_KEY && clickBoxId == CLOSET)
+		{
+			closetLocked = false;
+			getGame().getInventory().remove(item);
+			getGame().message("The key worked.\nThe door is unlocked.");
+		}
+	}
+	@Override
+	public void render(Graphics g) 
+	{
+		super.render(g);
+		if(closetKey != null)
+		{
+			g.drawImage(closetKey.getIcon(), 910, 290, 15, 15, null);
+		}
+	}
+
+}

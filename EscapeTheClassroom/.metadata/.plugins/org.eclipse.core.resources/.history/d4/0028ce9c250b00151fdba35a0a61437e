@@ -1,0 +1,36 @@
+
+public class GameLoop {
+
+	private Game game;
+	private boolean running;
+	
+	public GameLoop(Game game) 
+	{
+		this.game = game;
+	}
+
+	public void start()
+	{
+		running = true;
+		new Thread(new Runnable(){
+			@Override
+			public void run()
+			{
+				while(running)
+				{
+					game.repaint();
+					try {
+						Thread.sleep(16);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+				}
+			}
+		}).start();
+	}
+	
+	public void stop()
+	{
+		running = false;
+	}
+}

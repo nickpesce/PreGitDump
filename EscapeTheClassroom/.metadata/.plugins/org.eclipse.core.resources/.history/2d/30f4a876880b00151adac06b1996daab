@@ -1,0 +1,124 @@
+import java.awt.Color;
+import java.awt.Graphics;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
+
+
+public class SceneStreamline extends Scene {
+
+	private boolean sideOpened, computerPowered;
+	public static final int
+	PLAY = 0,
+	INSIDE = 1;
+	
+	private Clip song;
+	private boolean playing;
+	public SceneStreamline(Game game) 
+	{
+		super(game);
+		try {
+			setBackground(ImageIO.read(getClass().getResourceAsStream("Desktop.jpg")));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		try{
+			song = AudioSystem.getClip();
+			song.open(AudioSystem.getAudioInputStream(getClass().getResource("/Streamline.wav")));
+		}catch (UnsupportedAudioFileException | LineUnavailableException | IOException e) {
+			e.printStackTrace();
+		}
+		setSurroundings(Game.SceneName.west, Game.SceneName.west, Game.SceneName.west, Game.SceneName.west);
+		addClickBox(410,  225, 40, 40, PLAY);
+		addClickBox(331, 395,  90,  17, INSIDE);
+	}
+
+	@Override
+	public void onClickBoxPress(int id) 
+	{
+		super.onClickBoxPress(id);
+		switch(id)
+		{
+		case PLAY:
+			if(computerPowered)
+			{
+				if(playing)
+					song.stop();
+				else
+					song.loop(Clip.LOOP_CONTINUOUSLY);
+				if(!((SceneCeiling)(getGame().getScenes().get(Game.SceneName.ceiling))).didKeyFall())
+				{
+					((SceneCeiling)(getGame().getScenes().get(Game.SceneName.ceiling))).rumble();
+					getGame().message("It sounds like something fell from the ceiling.");
+				}
+				playing = !playing;
+			}
+			break;
+		case INSIDE:
+			if(sideOpened)
+				getGame().switchScene(Game.SceneName.wires);
+			else
+				getGame().message("The panel is screwed shut.");
+			break;
+		}
+	}
+	
+	@Override
+	public void itemDroppedInBox(Item item, int clickBoxId) 
+	{
+		super.itemDroppedInBox(item, clickBoxId);
+		switch(clickBoxId)
+		{
+		case INSIDE:
+			if(item.getId() == Item.SKREWDRIVER)
+			{
+				getGame().message("You opened the panel with the screwdriver!");
+				sideOpened = true;
+				getGame().getInventory().remove(item);
+			}
+		}
+	}
+	
+	@Override
+	public void render(Graphics g)
+	{
+		super.render(g);
+		if(computerPowered)
+		{
+			g.setColor(Color.BLUE);
+			g.fillPolygon(new int[]{272, 597, 580, 284}, new int[]{13, 22, 270, 268}, 4);
+			g.setColor(Color.GREEN);
+			g.drawString("STREAMLINE by Newton", 375, 50);
+			g.setColor(Color.WHITE);
+			if(playing)
+			{
+				g.fillRect(410, 225, 10, 30);
+				g.fillRect(426, 225, 10, 30);
+			}
+			else
+			{
+				g.fillPolygon(new int[]{410, 410, 440}, new int[]{255, 225, 240}, 3);
+			}
+		}
+		if(!sideOpened)
+		{
+			g.setColor(new Color(26, 26, 26));
+			g.fillPolygon(new int[]{331, 421, 422, 331}, new int[]{395, 393, 416, 418}, 4);
+			g.setColor(Color.GRAY);
+			g.fillOval(336, 400, 5, 5);
+			g.fillOval(412, 398, 5, 5);
+			g.fillOval(412, 406, 5, 5);
+			g.fillOval(336, 408, 5, 5);
+		}
+	}
+
+	public void setPowered(boolean b) 
+	{
+		computerPowered = b;
+	}
+
+}

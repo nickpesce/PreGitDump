@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="25" version="2.0">
+<workbenchAdvisor/>
+<window height="751" width="1024" x="244" y="21">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="122" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
+<coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="91" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="99" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="130" y="22"/>
+<coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page focus="true" label="Workspace - Debug">
+<editors>
+<editorArea activeWorkbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<info part="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+<part id="17"/>
+<part id="18"/>
+<part id="19"/>
+<part id="20"/>
+<part id="21"/>
+<part id="22"/>
+<part id="23"/>
+<part id="24"/>
+<part id="25"/>
+<part id="26"/>
+<part id="27"/>
+<part id="28"/>
+<part id="29"/>
+<part id="30"/>
+<part id="31"/>
+<part id="32"/>
+<part id="33"/>
+<part id="34"/>
+<part id="35"/>
+<part id="36"/>
+<part id="37"/>
+<part id="38"/>
+<part id="39"/>
+<part id="40"/>
+<part id="41"/>
+<part id="42"/>
+<part id="43"/>
+<part id="44"/>
+<part id="45"/>
+<part id="46"/>
+<part id="47"/>
+<part id="48"/>
+<part id="49"/>
+<part id="50"/>
+<part id="51"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Variables.java" partName="Variables.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/Variables.java" title="Variables.java" tooltip="Client/src/net/minecraft/src/Variables.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/Variables.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="4" selectionOffset="7220" selectionTopPixel="1560"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Minecraft.java" partName="Minecraft.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/client/Minecraft.java" title="Minecraft.java" tooltip="Client/src/net/minecraft/client/Minecraft.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/client/Minecraft.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="58285" selectionTopPixel="24120"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameSettings.java" partName="GameSettings.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GameSettings.java" title="GameSettings.java" tooltip="Client/src/net/minecraft/src/GameSettings.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GameSettings.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="4590" selectionTopPixel="1440"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityClientPlayerMP.java" partName="EntityClientPlayerMP.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/EntityClientPlayerMP.java" title="EntityClientPlayerMP.java" tooltip="Client/src/net/minecraft/src/EntityClientPlayerMP.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/EntityClientPlayerMP.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="10040" selectionTopPixel="3840"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiIngame.java" partName="GuiIngame.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiIngame.java" title="GuiIngame.java" tooltip="Client/src/net/minecraft/src/GuiIngame.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiIngame.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="24371" selectionTopPixel="9150"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiVexOptions.java" partName="GuiVexOptions.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiVexOptions.java" title="GuiVexOptions.java" tooltip="Client/src/net/minecraft/src/GuiVexOptions.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiVexOptions.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8941" selectionTopPixel="450"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VexScrollText.java" partName="VexScrollText.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/VexScrollText.java" title="VexScrollText.java" tooltip="Client/src/net/minecraft/src/VexScrollText.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/VexScrollText.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="710" selectionTopPixel="91"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VexKeyBind.java" partName="VexKeyBind.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/VexKeyBind.java" title="VexKeyBind.java" tooltip="Client/src/net/minecraft/src/VexKeyBind.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/VexKeyBind.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="18" selectionOffset="566" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiMainMenu.java" partName="GuiMainMenu.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiMainMenu.java" title="GuiMainMenu.java" tooltip="Client/src/net/minecraft/src/GuiMainMenu.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiMainMenu.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2216" selectionTopPixel="405"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiTexturePacks.java" partName="GuiTexturePacks.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiTexturePacks.java" title="GuiTexturePacks.java" tooltip="Client/src/net/minecraft/src/GuiTexturePacks.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiTexturePacks.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3698" selectionTopPixel="919"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiButtonLanguage.java" partName="GuiButtonLanguage.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiButtonLanguage.java" title="GuiButtonLanguage.java" tooltip="Client/src/net/minecraft/src/GuiButtonLanguage.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiButtonLanguage.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="78" selectionOffset="337" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiButtonSmallVex.java" partName="GuiButtonSmallVex.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiButtonSmallVex.java" title="GuiButtonSmallVex.java" tooltip="Client/src/net/minecraft/src/GuiButtonSmallVex.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiButtonSmallVex.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="599" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiVexYesNo.java" partName="GuiVexYesNo.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiVexYesNo.java" title="GuiVexYesNo.java" tooltip="Client/src/net/minecraft/src/GuiVexYesNo.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiVexYesNo.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1045" selectionTopPixel="45"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiScreen.java" partName="GuiScreen.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiScreen.java" title="GuiScreen.java" tooltip="Client/src/net/minecraft/src/GuiScreen.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiScreen.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4601" selectionTopPixel="3781"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiNameChanger.java" partName="GuiNameChanger.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiNameChanger.java" title="GuiNameChanger.java" tooltip="Client/src/net/minecraft/src/GuiNameChanger.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiNameChanger.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1239" selectionTopPixel="225"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiTextField.java" partName="GuiTextField.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiTextField.java" title="GuiTextField.java" tooltip="Client/src/net/minecraft/src/GuiTextField.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiTextField.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="22266" selectionOffset="0" selectionTopPixel="5265"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VexMultiPurposeThread.java" partName="VexMultiPurposeThread.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/VexMultiPurposeThread.java" title="VexMultiPurposeThread.java" tooltip="Client/src/net/minecraft/src/VexMultiPurposeThread.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/VexMultiPurposeThread.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5757" selectionTopPixel="1926"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Packet15Place.java" partName="Packet15Place.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/Packet15Place.java" title="Packet15Place.java" tooltip="Client/src/net/minecraft/src/Packet15Place.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/Packet15Place.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="13" selectionOffset="730" selectionTopPixel="60"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiNewChat.java" partName="GuiNewChat.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiNewChat.java" title="GuiNewChat.java" tooltip="Client/src/net/minecraft/src/GuiNewChat.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiNewChat.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6372" selectionTopPixel="2641"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiChat.java" partName="GuiChat.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiChat.java" title="GuiChat.java" tooltip="Client/src/net/minecraft/src/GuiChat.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiChat.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="10339" selectionTopPixel="5175"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TileEntityChest.java" partName="TileEntityChest.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/TileEntityChest.java" title="TileEntityChest.java" tooltip="Client/src/net/minecraft/src/TileEntityChest.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/TileEntityChest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1603" selectionTopPixel="570"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="World.java" partName="World.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/World.java" title="World.java" tooltip="Client/src/net/minecraft/src/World.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/World.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="66303" selectionTopPixel="29115"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RenderBlocks.java" partName="RenderBlocks.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/RenderBlocks.java" title="RenderBlocks.java" tooltip="Client/src/net/minecraft/src/RenderBlocks.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/RenderBlocks.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="264225" selectionTopPixel="77413"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Tessellator.java" partName="Tessellator.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/Tessellator.java" title="Tessellator.java" tooltip="Client/src/net/minecraft/src/Tessellator.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/Tessellator.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="9543" selectionTopPixel="3630"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiIngameMenu.java" partName="GuiIngameMenu.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiIngameMenu.java" title="GuiIngameMenu.java" tooltip="Client/src/net/minecraft/src/GuiIngameMenu.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiIngameMenu.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2577" selectionTopPixel="526"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TileEntityChestRenderer.java" partName="TileEntityChestRenderer.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/TileEntityChestRenderer.java" title="TileEntityChestRenderer.java" tooltip="Client/src/net/minecraft/src/TileEntityChestRenderer.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/TileEntityChestRenderer.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5293" selectionTopPixel="1906"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityPlayerSP.java" partName="EntityPlayerSP.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/EntityPlayerSP.java" title="EntityPlayerSP.java" tooltip="Client/src/net/minecraft/src/EntityPlayerSP.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/EntityPlayerSP.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="18957" selectionTopPixel="8370"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiVexAccounts.java" partName="GuiVexAccounts.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiVexAccounts.java" title="GuiVexAccounts.java" tooltip="Client/src/net/minecraft/src/GuiVexAccounts.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiVexAccounts.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="11308" selectionTopPixel="4554"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiSlotServer.java" partName="GuiSlotServer.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiSlotServer.java" title="GuiSlotServer.java" tooltip="Client/src/net/minecraft/src/GuiSlotServer.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiSlotServer.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3241" selectionTopPixel="770"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiSlotAccount.java" partName="GuiSlotAccount.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiSlotAccount.java" title="GuiSlotAccount.java" tooltip="Client/src/net/minecraft/src/GuiSlotAccount.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiSlotAccount.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1080" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiSlot.java" partName="GuiSlot.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiSlot.java" title="GuiSlot.java" tooltip="Client/src/net/minecraft/src/GuiSlot.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiSlot.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="850" selectionTopPixel="2745"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiVexTextFieldPrivate.java" partName="GuiVexTextFieldPrivate.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiVexTextFieldPrivate.java" title="GuiVexTextFieldPrivate.java" tooltip="Client/src/net/minecraft/src/GuiVexTextFieldPrivate.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiVexTextFieldPrivate.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="16038" selectionTopPixel="7322"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiScreenAccountList.java" partName="GuiScreenAccountList.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiScreenAccountList.java" title="GuiScreenAccountList.java" tooltip="Client/src/net/minecraft/src/GuiScreenAccountList.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiScreenAccountList.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1894" selectionTopPixel="360"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiScreenAddAccount.java" partName="GuiScreenAddAccount.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiScreenAddAccount.java" title="GuiScreenAddAccount.java" tooltip="Client/src/net/minecraft/src/GuiScreenAddAccount.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiScreenAddAccount.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1039" selectionTopPixel="90"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ThreadDownloadResources.java" partName="ThreadDownloadResources.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/ThreadDownloadResources.java" title="ThreadDownloadResources.java" tooltip="Client/src/net/minecraft/src/ThreadDownloadResources.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/ThreadDownloadResources.java"/>
+<editorState selectionHorizontalPixel="7" selectionLength="0" selectionOffset="1578" selectionTopPixel="375"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiVexAlt.java" partName="GuiVexAlt.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiVexAlt.java" title="GuiVexAlt.java" tooltip="Client/src/net/minecraft/src/GuiVexAlt.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiVexAlt.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1161" selectionTopPixel="270"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiVexProxy.java" partName="GuiVexProxy.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GuiVexProxy.java" title="GuiVexProxy.java" tooltip="Client/src/net/minecraft/src/GuiVexProxy.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GuiVexProxy.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="33" selectionOffset="2314" selectionTopPixel="855"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameWindowListener.java" partName="GameWindowListener.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/GameWindowListener.java" title="GameWindowListener.java" tooltip="Client/src/net/minecraft/src/GameWindowListener.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/GameWindowListener.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="379" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VexFont.java" partName="VexFont.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/VexFont.java" title="VexFont.java" tooltip="Client/src/net/minecraft/src/VexFont.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/VexFont.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4767" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VexNewAlts.java" partName="VexNewAlts.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/VexNewAlts.java" title="VexNewAlts.java" tooltip="Client/src/net/minecraft/src/VexNewAlts.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/VexNewAlts.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="396" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityLiving.java" partName="EntityLiving.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/EntityLiving.java" title="EntityLiving.java" tooltip="Client/src/net/minecraft/src/EntityLiving.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/EntityLiving.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="41106" selectionTopPixel="19815"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BlockSoulSand.java" partName="BlockSoulSand.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/BlockSoulSand.java" title="BlockSoulSand.java" tooltip="Client/src/net/minecraft/src/BlockSoulSand.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/BlockSoulSand.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="868" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RenderLiving.java" partName="RenderLiving.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/RenderLiving.java" title="RenderLiving.java" tooltip="Client/src/net/minecraft/src/RenderLiving.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/RenderLiving.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="21715" selectionTopPixel="5670"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RenderPlayer.java" partName="RenderPlayer.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/RenderPlayer.java" title="RenderPlayer.java" tooltip="Client/src/net/minecraft/src/RenderPlayer.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/RenderPlayer.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3946" selectionTopPixel="1335"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Timer.java" partName="Timer.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/Timer.java" title="Timer.java" tooltip="Client/src/net/minecraft/src/Timer.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/Timer.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="909" selectionTopPixel="317"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityPig.java" partName="EntityPig.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/EntityPig.java" title="EntityPig.java" tooltip="Client/src/net/minecraft/src/EntityPig.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/EntityPig.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6091" selectionTopPixel="2610"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Entity.java" partName="Entity.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/Entity.java" title="Entity.java" tooltip="Client/src/net/minecraft/src/Entity.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/Entity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="21603" selectionTopPixel="9855"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayerControllerMP.java" partName="PlayerControllerMP.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/PlayerControllerMP.java" title="PlayerControllerMP.java" tooltip="Client/src/net/minecraft/src/PlayerControllerMP.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/PlayerControllerMP.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="15402" selectionTopPixel="5790"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VexBowThread.java" partName="VexBowThread.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/VexBowThread.java" title="VexBowThread.java" tooltip="Client/src/net/minecraft/src/VexBowThread.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/VexBowThread.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="910" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityPlayer.java" partName="EntityPlayer.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/EntityPlayer.java" title="EntityPlayer.java" tooltip="Client/src/net/minecraft/src/EntityPlayer.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/EntityPlayer.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="18004" selectionTopPixel="8445"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VexKillAura.java" partName="VexKillAura.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/VexKillAura.java" title="VexKillAura.java" tooltip="Client/src/net/minecraft/src/VexKillAura.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/VexKillAura.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1824" selectionTopPixel="211"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Packet11PlayerPosition.java" partName="Packet11PlayerPosition.java" path="N:/Eclipse Workspaces/Vexation/src/minecraft/net/minecraft/src/Packet11PlayerPosition.java" title="Packet11PlayerPosition.java" tooltip="Client/src/net/minecraft/src/Packet11PlayerPosition.java" workbook="org.eclipse.ui.internal.EditorStack@6c8e3d65">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/net/minecraft/src/Packet11PlayerPosition.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1286" selectionTopPixel="226"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.jdt.callhierarchy.view" partName="Call Hierarchy">
+<viewState search_scope_type="1"/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.ui.views.AllMarkersView" partName="Markers">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.allSeverityField" categoryGroup="org.eclipse.ui.ide.type" markerContentGenerator="org.eclipse.ui.ide.allMarkersGenerator" partName="Markers">
+<columnWidths org.eclipse.ui.ide.allSeverityField="300" org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.allSeverityField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" partName="Snippets"/>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
+<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" partName="Data Source Explorer"/>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
+<viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.pde.ui.ExternalPluginLibrariesFilter1" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaElementFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ContainedLibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_RemoteSystemsConnections" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.FieldsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_RemoteSystemsTempFiles" isEnabled="true"/>
+<child filterId="org.eclipse.pde.ui.BinaryProjectFilter1" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter" isEnabled="true"/>
+<child filterId="org.eclipse.mylyn.java.ui.MembersFilter" isEnabled="false"/>
+</xmlDefinedFilters>
+</customFilters>
+</viewState>
+</view>
+<view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List"/>
+<view id="org.eclipse.wst.server.ui.ServersView" partName="Servers">
+<viewState CommonNavigator.LINKING_ENABLED="0"/>
+</view>
+</views>
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.debug.ui.DebugPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.jst.j2ee.J2eeMainActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.wst.ws.explorer.explorer"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.wst.server.ui.ServersView"/>
+<show_view_action id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator"/>
+<show_view_action id="org.eclipse.ui.views.BookmarkView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
+<show_view_action id="org.eclipse.ui.views.AllMarkersView"/>
+<show_view_action id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<new_wizard_action id="org.eclipse.jpt.jpa.ui.wizard.newJpaProject"/>
+<new_wizard_action id="org.eclipse.jst.j2ee.ui.project.facet.EarProjectWizard"/>
+<new_wizard_action id="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard"/>
+<new_wizard_action id="org.eclipse.jst.ejb.ui.project.facet.EjbProjectWizard"/>
+<new_wizard_action id="org.eclipse.jst.j2ee.jca.ui.internal.wizard.ConnectorProjectWizard"/>
+<new_wizard_action id="org.eclipse.jst.j2ee.ui.project.facet.appclient.AppClientProjectWizard"/>
+<new_wizard_action id="org.eclipse.wst.web.ui.internal.wizards.SimpleWebProjectWizard"/>
+<new_wizard_action id="org.eclipse.jpt.ui.wizard.newJpaProject"/>
+<new_wizard_action id="org.eclipse.jst.servlet.ui.internal.wizard.AddServletWizard"/>
+<new_wizard_action id="org.eclipse.jst.ejb.ui.internal.wizard.AddSessionBeanWizard"/>
+<new_wizard_action id="org.eclipse.jst.ejb.ui.internal.wizard.AddMessageDrivenBeanWizard"/>
+<new_wizard_action id="org.eclipse.jpt.ui.wizard.newEntity"/>
+<new_wizard_action id="org.eclipse.jst.ws.creation.ui.wizard.serverwizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<perspective_action id="org.eclipse.jpt.ui.jpaPerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.ui.resourcePerspective"/>
+<perspective_action id="org.eclipse.wst.web.ui.webDevPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+<view id="org.eclipse.ui.views.AllMarkersView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.wst.server.ui.ServersView"/>
+<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator"/>
+<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.jdt.callhierarchy.view"/>
+<fastViewBars/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.PackagesView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottomRight" ratio="0.7613169" ratioLeft="740" ratioRight="232" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="topRight" ratio="0.7" ratioLeft="525" ratioRight="225" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@4e219322" ratio="0.6481481" ratioLeft="630" ratioRight="342" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.AllMarkersView" label="Markers"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
+<page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="Data Source Explorer"/>
+<page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="Snippets"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.jdt.callhierarchy.view" label="Call Hierarchy"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="1" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.debug.internal.ui.DebugPerspectiveFactory" id="org.eclipse.debug.ui.DebugPerspective" label="Debug"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="com.android.ide.eclipse.ddms.views.LogCatView"/>
+<show_view_action id="com.android.ide.eclipse.ddms.views.DeviceView"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.datatools.sqltools.result.resultView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.eclipse.jdt.debug.ui.DisplayView"/>
+<perspective_action id="com.android.ide.eclipse.ddms.Perspective"/>
+<perspective_action id="org.eclipse.datatools.sqltools.sqleditor.perspectives.EditorPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<perspective_action id="org.eclipse.wst.jsdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.wst.xml.ui.perspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@73afa4db" orientation="512" selectedTabId="org.eclipse.jdt.ui.PackageExplorer" style="1">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="131072" id="org.eclipse.debug.internal.ui.ToolsFolderView" orientation="256" selectedTabId="org.eclipse.debug.ui.VariableView" style="0">
+<fastViews>
+<view id="org.eclipse.debug.ui.VariableView" ratio="0.3"/>
+<view id="org.eclipse.debug.ui.BreakpointView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="1024" id="org.eclipse.debug.internal.ui.ConsoleFolderView" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
+<fastViews>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.2984127"/>
+<view id="org.eclipse.ui.views.TaskList" ratio="0.3"/>
+<view id="org.eclipse.jdt.callhierarchy.view" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<page content="org.eclipse.wst.server.ui.ServersView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.8734568" ratioLeft="849" ratioRight="123" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.callhierarchy.view" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.eclipse.datatools.sqltools.result.resultView" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
+<page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
+<page content="org.eclipse.wst.xsl.jaxp.debug.ui.view1" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@14d3602d" ratio="0.5" ratioLeft="956" ratioRight="956" relationship="2" relative="org.eclipse.debug.internal.ui.ConsoleFolderView">
+<folder appearance="2" expanded="2">
+<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@73afa4db" ratio="0.4487004" ratioLeft="328" ratioRight="403" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.internal.ViewStack@73afa4db">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.24986738" ratioLeft="471" ratioRight="1414" relationship="2" relative="org.eclipse.ui.internal.ViewStack@73afa4db"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="956" ratioRight="956" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/net/minecraft/src/PlayerControllerMP.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/net/minecraft/src/TcpReaderThread.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/net/minecraft/src/VexKillAura.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/net/minecraft/src/RenderGlobal.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/net/minecraft/client/Minecraft.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/net/minecraft/src/EntityClientPlayerMP.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/net/minecraft/src/Variables.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/net/minecraft/src/EntityLiving.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/net/minecraft/src/ScaledResolution.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/net/minecraft/client/Minecraft.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/net/minecraft/src/World.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/net/minecraft/src/TcpReaderThread.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/net/minecraft/src/GuiIngame.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/net/minecraft/src/Packet11PlayerPosition.java"/>
+</editors>
+<item historyLabel="VexKillAura.java" index="2">
+<position/>
+</item>
+<item historyLabel="VexKillAura.java" index="2">
+<position info="not_deleted" x="2097" y="124"/>
+</item>
+<item historyLabel="RenderGlobal.java" index="3">
+<position/>
+</item>
+<item historyLabel="RenderGlobal.java" index="3">
+<position/>
+</item>
+<item historyLabel="VexKillAura.java" index="2">
+<position info="not_deleted" x="2097" y="124"/>
+</item>
+<item historyLabel="PlayerControllerMP.java" index="0">
+<position info="not_deleted" x="15402" y="0"/>
+</item>
+<item historyLabel="TcpReaderThread.java" index="1">
+<position info="not_deleted" x="783" y="0"/>
+</item>
+<item historyLabel="PlayerControllerMP.java" index="0">
+<position info="not_deleted" x="15402" y="0"/>
+</item>
+<item historyLabel="VexKillAura.java" index="2">
+<position info="not_deleted" x="2770" y="0"/>
+</item>
+<item historyLabel="RenderGlobal.java" index="3">
+<position info="not_deleted" x="95245" y="47"/>
+</item>
+<item historyLabel="RenderGlobal.java" index="3">
+<position info="not_deleted" x="94773" y="0"/>
+</item>
+<item historyLabel="RenderGlobal.java" index="3">
+<position info="not_deleted" x="96342" y="0"/>
+</item>
+<item historyLabel="VexKillAura.java" index="2">
+<position info="not_deleted" x="2770" y="0"/>
+</item>
+<item historyLabel="Minecraft.java" index="4">
+<position info="not_deleted" x="48178" y="0"/>
+</item>
+<item historyLabel="Minecraft.java" index="4">
+<position info="not_deleted" x="2015" y="9"/>
+</item>
+<item historyLabel="EntityClientPlayerMP.java" index="5">
+<position info="not_deleted" x="10310" y="0"/>
+</item>
+<item historyLabel="EntityClientPlayerMP.java" index="5">
+<position info="not_deleted" x="234" y="20"/>
+</item>
+<item historyLabel="Variables.java" index="6">
+<position info="not_deleted" x="36818" y="0"/>
+</item>
+<item historyLabel="Variables.java" index="6">
+<position info="not_deleted" x="43025" y="0"/>
+</item>
+<item historyLabel="Variables.java" index="6">
+<position info="not_deleted" x="7220" y="4"/>
+</item>
+<item historyLabel="EntityLiving.java" index="7">
+<position info="not_deleted" x="42308" y="0"/>
+</item>
+<item historyLabel="EntityLiving.java" index="7">
+<position info="not_deleted" x="41243" y="0"/>
+</item>
+<item historyLabel="Minecraft.java" index="4">
+<position info="not_deleted" x="2007" y="0"/>
+</item>
+<item historyLabel="EntityClientPlayerMP.java" index="5">
+<position info="not_deleted" x="10040" y="0"/>
+</item>
+<item historyLabel="EntityLiving.java" index="7">
+<position info="not_deleted" x="41243" y="0"/>
+</item>
+<item historyLabel="ScaledResolution.java" index="8">
+<position info="not_deleted" x="413" y="45"/>
+</item>
+<item historyLabel="EntityLiving.java" index="7">
+<position info="not_deleted" x="41243" y="0"/>
+</item>
+<item historyLabel="Minecraft.java" index="9">
+<position info="not_deleted" x="2007" y="0"/>
+</item>
+<item historyLabel="World.java" index="10">
+<position info="not_deleted" x="66137" y="0"/>
+</item>
+<item historyLabel="World.java" index="10">
+<position info="not_deleted" x="66303" y="0"/>
+</item>
+<item historyLabel="TcpReaderThread.java" index="11">
+<position/>
+</item>
+<item historyLabel="World.java" index="10">
+<position info="not_deleted" x="66303" y="0"/>
+</item>
+<item historyLabel="GuiIngame.java" index="12">
+<position info="not_deleted" x="24371" y="0"/>
+</item>
+<item historyLabel="EntityLiving.java" index="7">
+<position info="not_deleted" x="41106" y="0"/>
+</item>
+<item historyLabel="Minecraft.java" index="9">
+<position info="not_deleted" x="58701" y="0"/>
+</item>
+<item historyLabel="Minecraft.java" index="9">
+<position info="not_deleted" x="45145" y="0"/>
+</item>
+<item historyLabel="Minecraft.java" index="9">
+<position info="not_deleted" x="45843" y="0"/>
+</item>
+<item historyLabel="Minecraft.java" index="9">
+<position info="not_deleted" x="58285" y="0"/>
+</item>
+<item historyLabel="Packet11PlayerPosition.java" index="13">
+<position info="not_deleted" x="1349" y="0"/>
+</item>
+<item historyLabel="TcpReaderThread.java" index="11">
+<position/>
+</item>
+<item historyLabel="Packet11PlayerPosition.java" index="13">
+<position info="not_deleted" x="1349" y="0"/>
+</item>
+<item historyLabel="TcpReaderThread.java" index="11">
+<position/>
+</item>
+<item historyLabel="Packet11PlayerPosition.java" index="13">
+<position info="not_deleted" x="1349" y="0"/>
+</item>
+<item historyLabel="Packet11PlayerPosition.java" index="13">
+<position info="not_deleted" x="1349" y="0"/>
+</item>
+<item historyLabel="TcpReaderThread.java" index="11">
+<position/>
+</item>
+<item historyLabel="Packet11PlayerPosition.java" index="13">
+<position info="not_deleted" x="1231" y="0"/>
+</item>
+<item historyLabel="TcpReaderThread.java" index="11">
+<position/>
+</item>
+<item historyLabel="Packet11PlayerPosition.java" index="13">
+<position info="not_deleted" x="1286" y="0"/>
+</item>
+<item historyLabel="TcpReaderThread.java" index="11">
+<position info="not_deleted" x="996" y="0"/>
+</item>
+<item active="true" historyLabel="Packet11PlayerPosition.java" index="13">
+<position info="not_deleted" x="1286" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@73afa4db"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.ToolsFolderView"/>
+</trimArea>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+<trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.ConsoleFolderView"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TcpReaderThread.java" tooltip="Client/src/net/minecraft/src/TcpReaderThread.java">
+<persistable path="/Client/src/net/minecraft/src/TcpReaderThread.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Packet11PlayerPosition.java" tooltip="Client/src/net/minecraft/src/Packet11PlayerPosition.java">
+<persistable path="/Client/src/net/minecraft/src/Packet11PlayerPosition.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RenderGlobal.java" tooltip="Client/src/net/minecraft/src/RenderGlobal.java">
+<persistable path="/Client/src/net/minecraft/src/RenderGlobal.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VexKillAura.java" tooltip="Client/src/net/minecraft/src/VexKillAura.java">
+<persistable path="/Client/src/net/minecraft/src/VexKillAura.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityPlayer.java" tooltip="Client/src/net/minecraft/src/EntityPlayer.java">
+<persistable path="/Client/src/net/minecraft/src/EntityPlayer.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VexBowThread.java" tooltip="Client/src/net/minecraft/src/VexBowThread.java">
+<persistable path="/Client/src/net/minecraft/src/VexBowThread.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayerControllerMP.java" tooltip="Client/src/net/minecraft/src/PlayerControllerMP.java">
+<persistable path="/Client/src/net/minecraft/src/PlayerControllerMP.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ScaledResolution.java" tooltip="Client/src/net/minecraft/src/ScaledResolution.java">
+<persistable path="/Client/src/net/minecraft/src/ScaledResolution.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RenderHelper.java" tooltip="Client/src/net/minecraft/src/RenderHelper.java">
+<persistable path="/Client/src/net/minecraft/src/RenderHelper.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PositionTextureVertex.java" tooltip="Client/src/net/minecraft/src/PositionTextureVertex.java">
+<persistable path="/Client/src/net/minecraft/src/PositionTextureVertex.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Vec3.java" tooltip="Client/src/net/minecraft/src/Vec3.java">
+<persistable path="/Client/src/net/minecraft/src/Vec3.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Vec3D.java" tooltip="Client/src/net/minecraft/src/Vec3D.java">
+<persistable path="/Client/src/net/minecraft/src/Vec3D.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Entity.java" tooltip="Client/src/net/minecraft/src/Entity.java">
+<persistable path="/Client/src/net/minecraft/src/Entity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityPig.java" tooltip="Client/src/net/minecraft/src/EntityPig.java">
+<persistable path="/Client/src/net/minecraft/src/EntityPig.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Tuple.java" tooltip="Client/src/net/minecraft/src/Tuple.java">
+<persistable path="/Client/src/net/minecraft/src/Tuple.java"/>
+</file>
+</mruList>
+</workbench>

@@ -1,0 +1,71 @@
+import java.awt.Color;
+import java.awt.Graphics;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+
+public class ScenePhone extends Scene {
+
+	private boolean opened;
+	private boolean onHook;
+	public static final int
+	PHONE_BOX = 0,
+	PHONE = 1;
+	public ScenePhone(Game game) 
+	{
+		super(game);
+		try {
+			setBackground(ImageIO.read(getClass().getResourceAsStream("PhoneClosed.jpg")));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		opened = false;
+		onHook = true;
+		addClickBox(Game.WIDTH/2 - 150,  40,  300,  400, PHONE_BOX);
+		setSurroundings(Game.SceneName.north, Game.SceneName.north, Game.SceneName.north, Game.SceneName.north);
+	}
+
+	@Override
+	public void itemDroppedInBox(Item item, int clickBoxId) 
+	{
+		super.itemDroppedInBox(item, clickBoxId);
+		switch(item.getId())
+		{
+		case Item.DOOR_KEY:
+		case Item.CLOSET_KEY:
+			getGame().message("The key does not fit the lock.");
+			break;
+		}
+	}
+	@Override
+	public void onClickBoxPress(int id)
+	{
+		super.onClickBoxPress(id);
+		switch(id)
+		{
+		case PHONE:
+			onHook = !onHook;
+			break;
+		case PHONE_BOX:
+			if(!opened)
+			{
+				try {
+					setBackground(ImageIO.read(getClass().getResourceAsStream("PhoneOpen.jpg")));
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+				opened = !opened;
+				getGame().message("The phone box opened!");
+			}
+			break;
+		}
+	}
+	
+	@Override
+	public void render(Graphics g)
+	{
+		super.render(g);
+	}
+
+}

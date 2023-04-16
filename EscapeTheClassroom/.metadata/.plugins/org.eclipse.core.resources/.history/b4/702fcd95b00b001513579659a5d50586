@@ -1,0 +1,34 @@
+import java.awt.Color;
+import java.awt.Graphics;
+
+
+public class ScenePrinter extends Scene {
+
+	private boolean paperLoaded;
+	public ScenePrinter(Game game) 
+	{
+		super(game);
+		setSurroundings(Game.SceneName.west, Game.SceneName.west, Game.SceneName.west, Game.SceneName.west);
+		setBackground("Printer.jpg");
+		paperLoaded = true;
+	}
+
+	@Override
+	public void render(Graphics g) 
+	{
+		super.render(g);
+		if(paperLoaded)
+		{
+			g.setColor(Color.GREEN);
+		}else
+		{
+			g.setColor(Color.RED);
+		}
+		g.fillPolygon(new int[]{338, 420, 416, 330}, new int[]{226, 229, 279, 278}, 4);
+		g.setColor(Color.BLACK);
+		if(paperLoaded)
+			g.drawString("Ready to Print", 337, 240);
+		else
+			g.drawString("Out of Paper", 337, 240);
+	}
+}

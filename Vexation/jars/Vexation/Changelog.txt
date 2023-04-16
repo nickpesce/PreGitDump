@@ -1,0 +1,153 @@
+\/EX/\TIO/\/
+------------
+~~~~~~~
+*0.0.7*
+~~~~~~~
+Additions
+- (-drops) lines now have different colors and are thinner. (blue for diamond, gold for gold, silver for iron, and blck for everything else)
+- Zoom functionality(-zoom). Use scroll wheel to ajust zoom!
+- Notifier that tells you if your name is said in chat(-notifier)
+- Help GUI with scrolling
+- Trip Block locations save per server
+- Percent on download screen
+- Changelog on main menu(only if window is big)
+- Update button on main menu if uodate is avaliable
+
+Fixes
+- "RESET OPTIONS" resets all options including the new ones
+- fixed some account login error messages
+- -flee no longer spams the command
+- Scrolling MOTD will no longer stop sometimes
+- The account changer will now allow usernames that are "not allowed"
+
+Changes
+- You can no longer see the actual chest block through walls wile -chest is on
+- If chat is off, you can still see it if you press 'T'
+- All alts are saved for you can use them again with out waiting, but the alt name database is currently down :(
+- Password in the account changer is now not visible
+- Imporved nuke, kill, carpet, sphere, and irregular cylender
+- Changed look of main menu
+~~~~~~~
+*0.0.6*
+~~~~~~~
+Additions
+- Lag meter
+- No Push(-nopush)
+- I can now ban players(don't worry about it unless your name is Gabe...)
+Changes
+
+Fixes
+- Scroll MOTD now resets all the way to the begining
+- Friend's names are fixed
+- Radar is fixed
+~~~~~~~
+*0.0.5*
+~~~~~~~
+Additions
+- You can now press TAB to insert the first command prediction!
+- Toggle console(-console)
+- added enemy list(Enemies appear red on radar(Regular people appear silver), enemie's lines and boxes are red(Players now turn purple when close to you and are normaly silver)
+- added commands -addenemy, -delenemy, and -enemies
+- You can now add players to your friend list by right clicking on them and add them to your enemy list by punching them!
+- Allowed players list is now updatable by me
+- Toggle player's outline box with "-box"
+- Friends have green tint and enemies have red tint
+
+Changes
+- Fullbright will not make the time appear day if you are under a block, so the time will work
+- Minor updating changes
+
+Fixes
+- Fixed nametag
+
+~~~~~~~
+*0.0.4*
+~~~~~~~
+Additions
+- MOTD scroll on main menu
+- Time(-Time)(dosent work with fullbright)
+- Recconect button on disconnect
+- tripblock(-tb and -tb 2)
+- error messages on Update Gui
+- added True Type Font rendering
+- Command Predictions!!!!!!
+- knockback (-knockback)
+
+Changes
+- FullBright now makes sky appear to be day!
+- Changed/fixed noCheat button in Vexation Options menu. Now toggles nocheat protection.
+- radar triangles(soon going to rotate)
+- Changed chat look
+- 1.2!
+
+Fixes
+- Fixed chat remover(-chat)
+
+~~~~~~~
+*0.0.3*
+~~~~~~~
+Additions
+- Auto tool picker automatically
+- Checks for updates in game
+- changelog button on update screen
+
+FIXES
+- -nc sound glitch
+- Fixed Changelog
+
+~~~~~~~
+*0.0.2*
+~~~~~~~
+FIXES
+- Re-added lava and water to X-Ray
+- Fixed saving issue
+
+~~~~~~~
+*0.0.1*
+~~~~~~~
+- Just for Vex, First releasell not make the time appear day if you are under a block, so the time will work
+- Minor updating changes
+
+Fixes
+- Fixed nametag
+
+~~~~~~~
+*0.0.4*
+~~~~~~~
+Additions
+- MOTD scroll on main menu
+- Time(-Time)(dosent work with fullbright)
+- Recconect button on disconnect
+- tripblock(-tb and -tb 2)
+- error messages on Update Gui
+- added True Type Font rendering
+- Command Predictions!!!!!!
+- knockback (-knockback)
+
+Changes
+- FullBright now makes sky appear to be day!
+- Changed/fixed noCheat button in Vexation Options menu. Now toggles nocheat protection.
+- radar triangles(soon going to rotate)
+- Changed chat look
+- 1.2!
+
+Fixes
+- Fixed chat remover(-chat)
+
+~~~~~~~
+*0.0.3*
+~~~~~~~
+Additions
+- Auto tool picker automatically
+- Checks for updates in game
+- changelog button on update screen
+
+FIXES
+- -nc sound glitch
+- Fixed Changelog
+
+~~~~~~~
+*0.0.2*
+~~~~~~~
+FIXES
+- Re-added lava and water to X-Ra

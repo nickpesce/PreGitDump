@@ -1,0 +1,2 @@
+INDEX VERSION 1.126+D:\Eclipse Workspaces\Daron\.metadata\.plugins\org.eclipse.jdt.core
+4219306185.index

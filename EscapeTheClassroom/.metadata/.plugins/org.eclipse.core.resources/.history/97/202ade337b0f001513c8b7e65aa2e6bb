@@ -1,0 +1,10 @@
+
+public class SceneShelf extends Scene {
+
+	public SceneShelf(Game game) 
+	{
+		super(game);
+		addClickBox();
+	}
+
+}

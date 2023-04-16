@@ -1,0 +1,51 @@
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+
+public class SceneScanner extends Scene{
+
+	public final static int
+	PAPER = 0,
+	OPEN = 1;
+	private BufferedImage openedImage;
+	private boolean opened;
+	public SceneScanner(Game game) 
+	{
+		super(game);
+		addClickBox(300, 134, 200, 400, OPEN);
+		addClickBox(610, 0, 150, 350, PAPER);
+		setBackground("ScannerClosed.jpg");
+		try 
+		{
+			openedImage = ImageIO.read(getClass().getResourceAsStream("ScannerOpen.jpg"));
+		} catch (IOException e) 
+		{
+			e.printStackTrace();
+		}
+		setSurroundings(Game.SceneName.east, Game.SceneName.east, Game.SceneName.east, Game.SceneName.east);
+	}
+	
+	public void onClickBoxPress(int id)
+	{
+		super.onClickBoxPress(id);
+		switch(id)
+		{
+		case PAPER:
+			if(opened && !getGame().inventoryContains(Item.PAPER))
+				getGame().getInventory().add(new Item(Item.PAPER));
+			break;
+		case OPEN:
+			if(!opened)
+			{
+				opened = true;
+				setBackground(openedImage);
+			}
+			break;
+
+		}
+	}
+
+}

@@ -1,0 +1,25 @@
+import java.awt.Graphics;
+
+
+public class SceneKeyboard extends Scene {
+
+	private boolean hasSKey;
+	public SceneKeyboard(Game game)
+	{
+		super(game);
+		setBackground("Keyboard.jpg");
+	}
+
+	@Override
+	public void onClickBoxPress(int id)
+	{		
+		super.onClickBoxPress(id);
+	}
+	
+	@Override
+	public void render(Graphics g) 
+	{
+		super.render(g);
+	}
+
+}

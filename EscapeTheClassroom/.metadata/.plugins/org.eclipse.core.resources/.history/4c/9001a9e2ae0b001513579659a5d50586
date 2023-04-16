@@ -1,0 +1,10 @@
+
+public class ScenePrinter extends Scene {
+
+	public ScenePrinter(Game game) 
+	{
+		super(game);
+		setSurroundings(Game.SceneName.west, Game.SceneName.west, Game.SceneName.west, Game.SceneName.west);
+	}
+
+}

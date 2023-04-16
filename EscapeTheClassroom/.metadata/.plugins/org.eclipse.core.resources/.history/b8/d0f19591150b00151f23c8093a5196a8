@@ -1,0 +1,62 @@
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+
+public class SceneWallNorth extends Scene {
+
+	public static final int
+	DOOR = 0,
+	PHONE = 1;
+	
+	private boolean doorLocked;
+	public SceneWallNorth(Game game)
+	{
+		super(game);
+		try {
+			setBackground(ImageIO.read(getClass().getResourceAsStream("WallNorth.jpg")));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		doorLocked = true;
+		addClickBox(843, 144, 95, 333, DOOR);
+		addClickBox(730, 273, 37, 48, PHONE);
+		setSurroundings(Game.SceneName.ceiling, Game.SceneName.east, Game.SceneName.center, Game.SceneName.west);
+	}
+
+	
+	@Override
+	public void itemDroppedInBox(Item item, int clickBoxId)
+	{
+		super.itemDroppedInBox(item, clickBoxId);
+		switch(clickBoxId)
+		{
+		case DOOR:
+			if(item.getId() == Item.DOOR_KEY)
+			{
+				doorLocked = false;
+				getGame().message("The key worked!\nThe door is open!");
+			}
+			break;
+		}
+	}
+	
+	@Override
+	public void onClickBoxPress(int id) 
+	{
+		super.onClickBoxPress(id);
+		switch(id)
+		{
+		case DOOR:
+			if(doorLocked)
+				getGame().message("The door is locked.");
+			else
+				System.exit(0);
+			break;
+		case PHONE:
+			getGame().switchScene(Game.SceneName.phone);
+			break;
+		}
+		
+	}
+}

@@ -1,0 +1,60 @@
+---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 2/13/13 2:33 PM
+Description: Rendering screen
+
+java.lang.NullPointerException
+	at net.minecraft.src.GuiVexAccounts.loginToAccount(GuiVexAccounts.java:305)
+	at net.minecraft.src.GuiVexAccounts.loginToAccount(GuiVexAccounts.java:293)
+	at net.minecraft.src.GuiVexAccounts.loginToAccount(GuiVexAccounts.java:409)
+	at net.minecraft.src.GuiSlotAccount.elementClicked(GuiSlotAccount.java:37)
+	at net.minecraft.src.GuiSlot.drawScreen(GuiSlot.java:244)
+	at net.minecraft.src.GuiVexAccounts.drawScreen(GuiVexAccounts.java:271)
+	at net.minecraft.src.EntityRenderer.updateCameraAndRender(EntityRenderer.java:973)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:896)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:786)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.src.GuiVexAccounts.loginToAccount(GuiVexAccounts.java:305)
+	at net.minecraft.src.GuiVexAccounts.loginToAccount(GuiVexAccounts.java:293)
+	at net.minecraft.src.GuiVexAccounts.loginToAccount(GuiVexAccounts.java:409)
+	at net.minecraft.src.GuiSlotAccount.elementClicked(GuiSlotAccount.java:37)
+	at net.minecraft.src.GuiSlot.drawScreen(GuiSlot.java:244)
+	at net.minecraft.src.GuiVexAccounts.drawScreen(GuiVexAccounts.java:271)
+
+-- Screen render details --
+Details:
+	Screen name: net.minecraft.src.GuiVexAccounts
+	Mouse location: Scaled: (184, 101). Absolute: (368, 277)
+	Screen size: Scaled: (427, 240). Absolute: (854, 480). Scale factor of 2
+Stacktrace:
+	at net.minecraft.src.EntityRenderer.updateCameraAndRender(EntityRenderer.java:973)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:896)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:786)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.4.7
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_03, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 914890016 bytes (872 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Suspicious classes: Start[net.minecraft.src.IPlayerUsage, MinecraftFakeLauncher, ThreadShutdown, ...]
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	LWJGL: 2.4.2
+	OpenGL: GeForce GTX 560/PCIe/SSE2 GL version 4.2.0, NVIDIA Corporation
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Texture Pack: Default
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: ~~ERROR~~ NullPointerException: null

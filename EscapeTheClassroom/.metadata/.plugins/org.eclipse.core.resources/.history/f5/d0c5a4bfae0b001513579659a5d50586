@@ -1,0 +1,15 @@
+
+public class ScenePrinter extends Scene {
+
+	public ScenePrinter(Game game, boolean up, boolean down, boolean left,
+			boolean right) {
+		super(game, up, down, left, right);
+		// TODO Auto-generated constructor stub
+	}
+
+	public ScenePrinter(Game game) {
+		super(game);
+		// TODO Auto-generated constructor stub
+	}
+
+}

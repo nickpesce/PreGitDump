@@ -1,0 +1,42 @@
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 2/11/13 2:28 PM
+Description: Unexpected error
+
+java.lang.IllegalArgumentException: input == null!
+	at javax.imageio.ImageIO.read(Unknown Source)
+	at net.minecraft.src.RenderEngine.readTextureImage(RenderEngine.java:607)
+	at net.minecraft.src.RenderEngine.refreshTextures(RenderEngine.java:550)
+	at net.minecraft.src.GuiTexturePacks.actionPerformed(GuiTexturePacks.java:100)
+	at net.minecraft.src.GuiScreen.mouseClicked(GuiScreen.java:119)
+	at net.minecraft.src.GuiTexturePacks.mouseClicked(GuiTexturePacks.java:115)
+	at net.minecraft.src.GuiScreen.handleMouseInput(GuiScreen.java:198)
+	at net.minecraft.src.GuiScreen.handleInput(GuiScreen.java:172)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1545)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:861)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:786)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.4.7
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_03, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 880062688 bytes (839 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Suspicious classes: Start[net.minecraft.src.IPlayerUsage, MinecraftFakeLauncher, ThreadShutdown, ...]
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	LWJGL: 2.4.2
+	OpenGL: GeForce GTX 560/PCIe/SSE2 GL version 4.2.0, NVIDIA Corporation
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Texture Pack: Default
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: ~~ERROR~~ NullPointerException: null

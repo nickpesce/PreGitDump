@@ -1,0 +1,65 @@
+---- Minecraft Crash Report ----
+// Daisy, daisy...
+
+Time: 2/21/13 5:00 PM
+Description: Unexpected error
+
+java.lang.NullPointerException
+	at net.minecraft.src.Entity.moveEntity(Entity.java:718)
+	at net.minecraft.src.EntityReddustFX.onUpdate(EntityReddustFX.java:69)
+	at net.minecraft.src.EffectRenderer.updateEffects(EffectRenderer.java:52)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2004)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:861)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:786)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.src.Entity.moveEntity(Entity.java:718)
+	at net.minecraft.src.EntityReddustFX.onUpdate(EntityReddustFX.java:69)
+	at net.minecraft.src.EffectRenderer.updateEffects(EffectRenderer.java:52)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 11 total; [EntityClientPlayerMP['diamondsplox'/2799023, l='MpServer', x=-277.35, y=58.64, z=253.23], EntityOtherPlayerMP['SarahB21004'/2713135, l='MpServer', x=-276.31, y=56.50, z=258.94], EntityOtherPlayerMP['johndtraylor'/2757527, l='MpServer', x=-250.53, y=81.59, z=262.09], EntityOtherPlayerMP['NeverShoutNo'/2795723, l='MpServer', x=-251.63, y=63.06, z=258.38], EntityOtherPlayerMP['Markusskleins'/2749950, l='MpServer', x=-255.66, y=112.78, z=251.19], EntityOtherPlayerMP['neffmou5'/2756936, l='MpServer', x=-301.41, y=39.00, z=245.44], EntityOtherPlayerMP['Siick_Era'/2750881, l='MpServer', x=-257.22, y=113.00, z=252.78], EntityOtherPlayerMP['2002creeper'/2748561, l='MpServer', x=-251.28, y=58.59, z=246.25], EntityOtherPlayerMP['pepsichic'/2718763, l='MpServer', x=-237.47, y=121.00, z=242.69], EntityOtherPlayerMP['JCT7658'/2722470, l='MpServer', x=-292.53, y=56.50, z=262.09], EntityOtherPlayerMP['njwp27'/2799005, l='MpServer', x=-279.31, y=39.16, z=206.31]]
+	Chunk stats: MultiplayerChunkCache: 121
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-256,59,244), Chunk: (at 0,3,4 in -16,15; contains blocks -256,0,240 to -241,255,255), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 180754355 game time, 180907880 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 46 total; [EntityOtherPlayerMP['johndtraylor'/2757527, l='MpServer', x=-250.53, y=81.59, z=262.09], EntityOtherPlayerMP['njwp27'/2799005, l='MpServer', x=-279.31, y=39.16, z=206.31], EntityOtherPlayerMP['NeverShoutNo'/2795723, l='MpServer', x=-251.63, y=63.06, z=258.38], EntityItemFrame['entity.ItemFrame.name'/156, l='MpServer', x=-234.50, y=54.50, z=279.94], EntityItemFrame['entity.ItemFrame.name'/157, l='MpServer', x=-235.50, y=54.50, z=279.94], EntityItemFrame['entity.ItemFrame.name'/158, l='MpServer', x=-236.50, y=54.50, z=279.94], EntityOtherPlayerMP['Cherryfanny'/2717016, l='MpServer', x=-255.47, y=59.00, z=244.03], EntityOtherPlayerMP['pepsichic'/2718763, l='MpServer', x=-237.47, y=121.00, z=242.69], EntityOtherPlayerMP['njwp27'/2799005, l='MpServer', x=-279.31, y=39.16, z=206.31], EntityOtherPlayerMP['JCT7658'/2722470, l='MpServer', x=-292.53, y=56.50, z=262.09], EntityOtherPlayerMP['JCT7658'/2722470, l='MpServer', x=-292.53, y=56.50, z=262.09], EntityOtherPlayerMP['neffmou5'/2756936, l='MpServer', x=-301.41, y=39.00, z=245.44], EntityOtherPlayerMP['SarahB21004'/2713135, l='MpServer', x=-276.31, y=56.50, z=258.94], EntityItemFrame['entity.ItemFrame.name'/63, l='MpServer', x=-324.50, y=169.50, z=254.06], EntityItemFrame['entity.ItemFrame.name'/62, l='MpServer', x=-323.50, y=169.50, z=254.06], EntityOtherPlayerMP['legoman6060'/2735600, l='MpServer', x=-217.88, y=55.34, z=188.80], EntityItemFrame['entity.ItemFrame.name'/68, l='MpServer', x=-322.06, y=169.50, z=256.50], EntityOtherPlayerMP['2004dawid'/2787740, l='MpServer', x=-193.47, y=53.00, z=261.28], EntityItemFrame['entity.ItemFrame.name'/69, l='MpServer', x=-322.06, y=169.50, z=257.50], EntityOtherPlayerMP['pepsichic'/2718763, l='MpServer', x=-237.47, y=121.00, z=242.69], EntityItemFrame['entity.ItemFrame.name'/70, l='MpServer', x=-322.06, y=169.50, z=258.50], EntityOtherPlayerMP['2002creeper'/2748561, l='MpServer', x=-251.28, y=58.59, z=246.25], EntityItemFrame['entity.ItemFrame.name'/71, l='MpServer', x=-325.94, y=169.50, z=258.50], EntityOtherPlayerMP['Siick_Era'/2750881, l='MpServer', x=-257.22, y=113.00, z=252.78], EntityItemFrame['entity.ItemFrame.name'/64, l='MpServer', x=-325.50, y=169.50, z=254.06], EntityItemFrame['entity.ItemFrame.name'/65, l='MpServer', x=-322.50, y=169.50, z=254.06], EntityItemFrame['entity.ItemFrame.name'/66, l='MpServer', x=-322.06, y=169.50, z=255.50], EntityItemFrame['entity.ItemFrame.name'/67, l='MpServer', x=-325.94, y=169.50, z=255.50], EntityOtherPlayerMP['2002creeper'/2748561, l='MpServer', x=-251.28, y=58.59, z=246.25], EntityItemFrame['entity.ItemFrame.name'/72, l='MpServer', x=-325.94, y=169.50, z=257.50], EntityItemFrame['entity.ItemFrame.name'/73, l='MpServer', x=-325.94, y=169.50, z=256.50], EntityItemFrame['entity.ItemFrame.name'/74, l='MpServer', x=-325.50, y=169.50, z=259.94], EntityItemFrame['entity.ItemFrame.name'/75, l='MpServer', x=-322.50, y=169.50, z=259.94], EntityOtherPlayerMP['extreamkid54'/2782152, l='MpServer', x=-217.33, y=54.33, z=189.12], EntityOtherPlayerMP['SarahB21004'/2713135, l='MpServer', x=-276.31, y=56.50, z=258.94], EntityOtherPlayerMP['johndtraylor'/2757527, l='MpServer', x=-250.53, y=81.59, z=262.09], EntityOtherPlayerMP['NeverShoutNo'/2795723, l='MpServer', x=-251.63, y=63.06, z=258.38], EntityClientPlayerMP['diamondsplox'/2799023, l='MpServer', x=-277.35, y=58.64, z=253.23], EntityOtherPlayerMP['Venomous_Cobra'/2781983, l='MpServer', x=-255.50, y=59.00, z=244.50], EntityOtherPlayerMP['Markusskleins'/2749950, l='MpServer', x=-255.66, y=112.78, z=251.19], EntityOtherPlayerMP['neffmou5'/2756936, l='MpServer', x=-301.41, y=39.00, z=245.44], EntityOtherPlayerMP['xXSlinkyHDXx'/2786152, l='MpServer', x=-255.47, y=59.00, z=244.03], EntityOtherPlayerMP['Siick_Era'/2750881, l='MpServer', x=-257.22, y=113.00, z=252.78], EntityOtherPlayerMP['Markusskleins'/2749950, l='MpServer', x=-255.66, y=112.78, z=251.19], EntityPig['Pig'/-2147483542, l='MpServer', x=-122.72, y=85.75, z=6169.28], EntityChicken['Chicken'/-2147483543, l='MpServer', x=-119.66, y=86.43, z=6167.47]]
+	Retry entities: 0 total; []
+Stacktrace:
+	at net.minecraft.src.WorldClient.addWorldInfoToCrashReport(WorldClient.java:405)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2546)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:809)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.4.7
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_03, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 921216160 bytes (878 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 9635 (539560 bytes; 0 MB) allocated, 72 (4032 bytes; 0 MB) used
+	Suspicious classes: Start[net.minecraft.src.IPlayerUsage, MinecraftFakeLauncher, ThreadShutdown, ...]
+	IntCache: cache: 0, tcache: 0, allocated: 3, tallocated: 63
+	LWJGL: 2.4.2
+	OpenGL: GeForce GTX 560/PCIe/SSE2 GL version 4.2.0, NVIDIA Corporation
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Texture Pack: Default
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 126 (7056 bytes; 0 MB) allocated, 64 (3584 bytes; 0 MB) used

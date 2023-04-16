@@ -1,0 +1,173 @@
+import java.awt.Canvas;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Insets;
+import java.awt.image.BufferStrategy;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+import javax.swing.JFrame;
+
+
+public class GameCanvas extends Canvas{
+
+	BufferStrategy buffer;
+	
+	public static final int
+	LOADING = 0,
+	VICTORY = 1;
+	
+	private double scaleX, scaleY;
+	private Game game;
+	private long nextAnimationFrameTime;
+	private int animationIndex;
+	private BufferedImage[] apple;
+	private BufferedImage cupcake;
+	
+	public GameCanvas(Game game)
+	{
+		//setIgnoreRepaint(true);
+		this.game = game;
+		updateScale(game.getFrame());
+		apple = new BufferedImage[5];
+		try{
+			apple[0] = ImageIO.read(getClass().getResourceAsStream("Apple.png"));
+			apple[1] = ImageIO.read(getClass().getResourceAsStream("AppleSparkle1.png"));
+			apple[2] = ImageIO.read(getClass().getResourceAsStream("AppleSparkle2.png"));
+			apple[3] = ImageIO.read(getClass().getResourceAsStream("AppleSparkle3.png"));
+			apple[4] = ImageIO.read(getClass().getResourceAsStream("AppleSparkle4.png"));
+			cupcake = ImageIO.read(getClass().getResourceAsStream("Cupcake.png"));
+		}catch(IOException e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * Overrides the Canvas paint method to use the games paint method. When resized, it will repaint accordingly.
+	 */
+	@Override
+	public void paint(Graphics g)
+	{
+		game.repaint();
+	}
+
+	/**
+	 * Updates the scaleX and scaleY variables according to the size of the frame
+	 * @param frame the JFrame to use for the size.
+	 */
+	public void updateScale(JFrame frame)
+	{
+		Insets decoration = frame.getInsets();
+		int availableHeight = (frame.getHeight() - decoration.top - decoration.bottom);
+		int availableWidth = (frame.getWidth() - decoration.left - decoration.right);
+		setMinimumSize(new Dimension(availableWidth, availableHeight));
+		scaleY = availableHeight/(double)Game.HEIGHT;
+		scaleX = availableWidth/(double)Game.WIDTH;
+	}
+	
+	/**
+	 * Draw the scene and gui using a double buffer
+	 * @param scene The current scene
+	 * @param gui the player gui to draw
+	 */
+	public void render(Scene scene, GuiOverlay gui)
+	{
+		if(buffer == null || buffer.contentsLost())
+		{
+			createBufferStrategy(2);
+			buffer = getBufferStrategy();
+		}
+		Graphics g = buffer.getDrawGraphics();
+		((Graphics2D)g).scale(scaleX, scaleY);
+		/////////////////Begin Draw
+		
+		g.setColor(Color.YELLOW);
+		g.fillRect(0, 0, Game.WIDTH, Game.HEIGHT);
+		g.setColor(Color.BLUE);
+		scene.render(g);
+		gui.render(g);
+		////////////////End Draw
+		
+		if(!buffer.contentsLost())
+			buffer.show();
+		g.dispose();
+	}
+	
+	/**
+	 * Draws a preset screen other that a scene. 
+	 * @param screen The scene ID
+	 * @param extra Extra info for the scene
+	 */
+	public void render(int screen, String extra)
+	{
+		if(buffer == null || buffer.contentsLost())
+		{
+			createBufferStrategy(2);
+			buffer = getBufferStrategy();
+		}
+		Graphics g = buffer.getDrawGraphics();
+		((Graphics2D)g).scale(scaleX, scaleY);
+		switch(screen)
+		{
+		case LOADING:
+			g.setColor(Color.GREEN);
+			g.fillRect(0, 0, Game.WIDTH, Game.HEIGHT);
+			g.setFont(new Font("ARIAL", Font.PLAIN, 81));
+			
+			g.setColor(Color.BLUE);
+			String gameName = "Escape the Classroom";
+			g.drawString(gameName, (Game.WIDTH/2)-(g.getFontMetrics().stringWidth(gameName)/2), g.getFontMetrics().getHeight() + 20);
+			
+			g.setColor(Color.WHITE);
+			String loadingString = "LOADING:";
+			g.drawString(loadingString, (Game.WIDTH/2)-(g.getFontMetrics().stringWidth(loadingString)/2), Game.HEIGHT/2 - (g.getFontMetrics().getHeight()/2));
+			
+			g.setColor(Color.LIGHT_GRAY);
+			g.drawString(extra, (Game.WIDTH/2)-(g.getFontMetrics().stringWidth(extra)/2), Game.HEIGHT/2 + (g.getFontMetrics().getHeight()/2));
+			
+			if(nextAnimationFrameTime <= System.currentTimeMillis())
+			{
+				nextAnimationFrameTime = System.currentTimeMillis()+250;
+				animationIndex++;
+				animationIndex %= 5;
+			}
+			g.drawImage(apple[animationIndex], Game.WIDTH/2 - 50, Game.HEIGHT-150, 100, 100, null);
+			break;
+		case VICTORY:
+			g.setColor(Color.GREEN);
+			g.fillRect(0, 0, Game.WIDTH, Game.HEIGHT);
+			g.setFont(new Font("ARIAL", Font.PLAIN, 81));
+			
+			g.setColor(Color.BLUE);
+			g.drawString("CONGRATULATIONS!", (Game.WIDTH/2)-(g.getFontMetrics().stringWidth("CONGRATULATIONS!")/2), g.getFontMetrics().getHeight() + 20);
+			
+			g.setColor(Color.WHITE);
+			String escapeString = "You escaped in :";
+			g.drawString(escapeString, (Game.WIDTH/2)-(g.getFontMetrics().stringWidth(escapeString)/2), Game.HEIGHT/2 - (g.getFontMetrics().getHeight()/2));
+			
+			g.setFont(new Font("ARIAL", Font.PLAIN, 46));
+			g.setColor(Color.YELLOW);
+			g.drawString(extra, (Game.WIDTH/2)-(g.getFontMetrics().stringWidth(extra)/2), Game.HEIGHT/2 + (g.getFontMetrics().getHeight()));
+			g.drawImage(cupcake, Game.WIDTH/2 - 50, 150, 100, 100, null);
+			break;
+		}
+		
+		buffer.show();
+		g.dispose();
+	}
+	
+	public double getScaleX()
+	{
+		return scaleX;
+	}
+	
+	public double getScaleY()
+	{
+		return scaleY;
+	}
+}

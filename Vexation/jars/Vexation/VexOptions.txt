@@ -1,0 +1,102 @@
+#Vexation Options
+Version:0.0.7
+Panic Command:
+Hot Key 1:
+Hot Key 2:
+Hot Key 3:
+Hot Key 4:
+VEXGUI:false
+Step:false
+Speed Hack:false
+Speed:1
+High Jump:false
+Fly:false
+Sneak:false
+Full Bright:false
+No Fall:false
+Kill:false
+No Swing:false
+Derp:false
+Xray:false
+Find:false
+Climb:false
+Nuke:false
+No Weather:false
+Jesus:false
+Walk:false
+Sphere:false
+Irregular Cylender:false
+Carpet:false
+Name:true
+Fast Place:false
+Cords:true
+Follow:false
+Radar:true
+RadarX:715
+RadarY:336
+Locate:false
+Slow:false
+Freecam:false
+Chat:false
+Already Flying:false
+Pause:false
+Fast Mine:false
+Mine Speed:1.0
+Line:false
+Freecam X:25.699999988079064
+Freecam Y:63.62000000476837
+Freecam Z:-133.30000001192093
+Cave Finder:false
+Place Swastika:false
+Aim:false
+Aim Player:null
+Line View Bobbing:false
+Spec Aim:false
+Flip:true
+Death PosX:58.0
+Death PosY:66.0
+Death PosZ:-92.0
+Mob Find:false
+Fog:true
+Auto Picker:true
+House Finder:false
+Run:false
+Opacity:90
+Clear:false
+Translucent:false
+Flee:false
+Chest:false
+Dungeon Chest:false
+Drops:false
+Chest Lines:false
+Auto Shoot:false
+Time:true
+Compass:true
+Knockback:false
+Console:true
+Item Damage:true
+Player Box:false
+No Push:false
+Zoom:false
+Zoom Amount:0.5
+Notifier:true
+VexKey_§5GUI:34
+VexKey_§5Step:50
+VexKey_§5Speed Hack:38
+VexKey_§5Fly:33
+VexKey_§5High Jump:36
+VexKey_§5Sneak:44
+VexKey_§5Climb:46
+VexKey_§5No Swing:24
+VexKey_§5Force Field:37
+VexKey_§5Full Bright:48
+VexKey_§5Nuke:49
+VexKey_§5No Weather:25
+VexKey_§5Radar:19
+VexKey_§5Panic:35
+VexKey_§5X-Ray:45
+VexKey_§5freecam:47
+VexKey_§5Hot Key 1:203
+VexKey_§5Hot Key 2:200
+VexKey_§5Hot Key 3:205
+VexKey_§5Hot Key 4:208

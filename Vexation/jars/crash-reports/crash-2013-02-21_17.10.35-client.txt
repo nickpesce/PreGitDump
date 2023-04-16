@@ -1,0 +1,85 @@
+---- Minecraft Crash Report ----
+// Quite honestly, I wouldn't worry myself about that.
+
+Time: 2/21/13 5:10 PM
+Description: Exception while adding particle
+
+java.lang.NullPointerException
+	at net.minecraft.src.World.getCollidingBoundingBoxes(World.java:1556)
+	at net.minecraft.src.Entity.moveEntity(Entity.java:683)
+	at net.minecraft.src.EntityCritFX.onUpdate(EntityCritFX.java:64)
+	at net.minecraft.src.EntityCritFX.<init>(EntityCritFX.java:29)
+	at net.minecraft.src.EntityCritFX.<init>(EntityCritFX.java:9)
+	at net.minecraft.src.RenderGlobal.doSpawnParticle(RenderGlobal.java:2200)
+	at net.minecraft.src.RenderGlobal.spawnParticle(RenderGlobal.java:2120)
+	at net.minecraft.src.World.spawnParticle(World.java:1384)
+	at net.minecraft.src.EntityCrit2FX.onUpdate(EntityCrit2FX.java:45)
+	at net.minecraft.src.EffectRenderer.updateEffects(EffectRenderer.java:52)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2004)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:861)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:786)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.src.World.getCollidingBoundingBoxes(World.java:1556)
+	at net.minecraft.src.Entity.moveEntity(Entity.java:683)
+	at net.minecraft.src.EntityCritFX.onUpdate(EntityCritFX.java:64)
+	at net.minecraft.src.EntityCritFX.<init>(EntityCritFX.java:29)
+	at net.minecraft.src.EntityCritFX.<init>(EntityCritFX.java:9)
+	at net.minecraft.src.RenderGlobal.doSpawnParticle(RenderGlobal.java:2200)
+
+-- Particle being added --
+Details:
+	Name: crit
+	Position: -255.32,59.82,244.01 - World: (-256,59,244), Chunk: (at 0,3,4 in -16,15; contains blocks -256,0,240 to -241,255,255), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+Stacktrace:
+	at net.minecraft.src.RenderGlobal.spawnParticle(RenderGlobal.java:2120)
+	at net.minecraft.src.World.spawnParticle(World.java:1384)
+	at net.minecraft.src.EntityCrit2FX.onUpdate(EntityCrit2FX.java:45)
+	at net.minecraft.src.EffectRenderer.updateEffects(EffectRenderer.java:52)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 18 total; [EntityClientPlayerMP['diamondsplox'/2835261, l='MpServer', x=-260.34, y=60.88, z=248.52], EntityOtherPlayerMP['JCT7658'/2722470, l='MpServer', x=-257.28, y=59.00, z=247.72], EntityOtherPlayerMP['QC3000'/2746794, l='MpServer', x=-255.75, y=59.00, z=245.53], EntityOtherPlayerMP['Mr_Mine_Maker'/2823394, l='MpServer', x=-262.88, y=59.00, z=254.31], EntityOtherPlayerMP['Siick_Era'/2750881, l='MpServer', x=-257.22, y=113.00, z=252.78], EntityOtherPlayerMP['NicoChris'/2833915, l='MpServer', x=-250.63, y=59.00, z=262.47], EntityOtherPlayerMP['DIRTcheep'/2832559, l='MpServer', x=-259.72, y=79.00, z=254.31], EntityOtherPlayerMP['USMC_YUKON'/2831115, l='MpServer', x=-280.31, y=55.84, z=233.69], EntityOtherPlayerMP['ZCP'/2834570, l='MpServer', x=-254.53, y=59.00, z=244.59], EntityOtherPlayerMP['ThyCallMeSteve'/2813410, l='MpServer', x=-255.09, y=59.00, z=242.88], EntityOtherPlayerMP['NeverShoutNo'/2795723, l='MpServer', x=-256.66, y=62.00, z=250.38], EntityOtherPlayerMP['Jetai'/2779112, l='MpServer', x=-252.72, y=65.00, z=259.06], EntityOtherPlayerMP['mattzappa2525'/2832160, l='MpServer', x=-259.53, y=66.94, z=257.47], EntityOtherPlayerMP['BobbyGillespie'/2801565, l='MpServer', x=-222.34, y=48.00, z=262.47], EntityOtherPlayerMP['skystorm10101'/2750256, l='MpServer', x=-270.50, y=59.00, z=256.72], EntityOtherPlayerMP['creeper9901'/2811212, l='MpServer', x=-255.50, y=59.00, z=244.50], EntityOtherPlayerMP['Sir_HecticDonut'/2790618, l='MpServer', x=-255.47, y=59.00, z=244.03], EntityOtherPlayerMP['DenverGuignard'/2832595, l='MpServer', x=-255.47, y=59.00, z=244.03]]
+	Chunk stats: MultiplayerChunkCache: 121
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-256,59,244), Chunk: (at 0,3,4 in -16,15; contains blocks -256,0,240 to -241,255,255), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 180760706 game time, 180914231 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 54 total; [EntityClientPlayerMP['diamondsplox'/2835261, l='MpServer', x=-260.34, y=60.88, z=248.52], EntityOtherPlayerMP['JCT7658'/2722470, l='MpServer', x=-257.28, y=59.00, z=247.72], EntityOtherPlayerMP['QC3000'/2746794, l='MpServer', x=-255.75, y=59.00, z=245.53], EntityOtherPlayerMP['Mr_Mine_Maker'/2823394, l='MpServer', x=-262.88, y=59.00, z=254.31], EntityOtherPlayerMP['Siick_Era'/2750881, l='MpServer', x=-257.22, y=113.00, z=252.78], EntityOtherPlayerMP['NicoChris'/2833915, l='MpServer', x=-250.63, y=59.00, z=262.47], EntityOtherPlayerMP['DIRTcheep'/2832559, l='MpServer', x=-259.72, y=79.00, z=254.31], EntityOtherPlayerMP['USMC_YUKON'/2831115, l='MpServer', x=-280.31, y=55.84, z=233.69], EntityOtherPlayerMP['ZnH62'/2834498, l='MpServer', x=-250.28, y=59.00, z=245.78], EntityOtherPlayerMP['ZCP'/2834570, l='MpServer', x=-254.53, y=59.00, z=244.59], EntityOtherPlayerMP['ThyCallMeSteve'/2813410, l='MpServer', x=-255.09, y=59.00, z=242.88], EntityOtherPlayerMP['NeverShoutNo'/2795723, l='MpServer', x=-256.66, y=62.00, z=250.38], EntityOtherPlayerMP['Jetai'/2779112, l='MpServer', x=-252.72, y=65.00, z=259.06], EntityOtherPlayerMP['NeverShoutNo'/2795723, l='MpServer', x=-256.66, y=62.00, z=250.38], EntityOtherPlayerMP['mattzappa2525'/2832160, l='MpServer', x=-259.53, y=66.94, z=257.47], EntityItemFrame['entity.ItemFrame.name'/156, l='MpServer', x=-234.50, y=54.50, z=279.94], EntityItemFrame['entity.ItemFrame.name'/157, l='MpServer', x=-235.50, y=54.50, z=279.94], EntityItemFrame['entity.ItemFrame.name'/158, l='MpServer', x=-236.50, y=54.50, z=279.94], EntityOtherPlayerMP['Mr_Mine_Maker'/2823394, l='MpServer', x=-262.88, y=59.00, z=254.31], EntityOtherPlayerMP['ZCP'/2834570, l='MpServer', x=-254.53, y=59.00, z=244.59], EntityOtherPlayerMP['skystorm10101'/2750256, l='MpServer', x=-270.50, y=59.00, z=256.72], EntityOtherPlayerMP['BobbyGillespie'/2801565, l='MpServer', x=-222.34, y=48.00, z=262.47], EntityOtherPlayerMP['mattzappa2525'/2832160, l='MpServer', x=-259.53, y=66.94, z=257.47], EntityOtherPlayerMP['BobbyGillespie'/2801565, l='MpServer', x=-222.34, y=48.00, z=262.47], EntityOtherPlayerMP['JCT7658'/2722470, l='MpServer', x=-257.28, y=59.00, z=247.72], EntityOtherPlayerMP['DenverGuignard'/2832595, l='MpServer', x=-255.47, y=59.00, z=244.03], EntityOtherPlayerMP['DenverGuignard'/2832595, l='MpServer', x=-255.47, y=59.00, z=244.03], EntityOtherPlayerMP['Sir_HecticDonut'/2790618, l='MpServer', x=-255.47, y=59.00, z=244.03], EntityItemFrame['entity.ItemFrame.name'/63, l='MpServer', x=-324.50, y=169.50, z=254.06], EntityItemFrame['entity.ItemFrame.name'/62, l='MpServer', x=-323.50, y=169.50, z=254.06], EntityOtherPlayerMP['NicoChris'/2833915, l='MpServer', x=-250.63, y=59.00, z=262.47], EntityItemFrame['entity.ItemFrame.name'/68, l='MpServer', x=-322.06, y=169.50, z=256.50], EntityItemFrame['entity.ItemFrame.name'/69, l='MpServer', x=-322.06, y=169.50, z=257.50], EntityOtherPlayerMP['USMC_YUKON'/2831115, l='MpServer', x=-280.31, y=55.84, z=233.69], EntityItemFrame['entity.ItemFrame.name'/70, l='MpServer', x=-322.06, y=169.50, z=258.50], EntityItemFrame['entity.ItemFrame.name'/71, l='MpServer', x=-325.94, y=169.50, z=258.50], EntityItemFrame['entity.ItemFrame.name'/64, l='MpServer', x=-325.50, y=169.50, z=254.06], EntityItemFrame['entity.ItemFrame.name'/65, l='MpServer', x=-322.50, y=169.50, z=254.06], EntityItemFrame['entity.ItemFrame.name'/66, l='MpServer', x=-322.06, y=169.50, z=255.50], EntityItemFrame['entity.ItemFrame.name'/67, l='MpServer', x=-325.94, y=169.50, z=255.50], EntityOtherPlayerMP['DIRTcheep'/2832559, l='MpServer', x=-259.72, y=79.00, z=254.31], EntityItemFrame['entity.ItemFrame.name'/72, l='MpServer', x=-325.94, y=169.50, z=257.50], EntityItemFrame['entity.ItemFrame.name'/73, l='MpServer', x=-325.94, y=169.50, z=256.50], EntityItemFrame['entity.ItemFrame.name'/74, l='MpServer', x=-325.50, y=169.50, z=259.94], EntityItemFrame['entity.ItemFrame.name'/75, l='MpServer', x=-322.50, y=169.50, z=259.94], EntityOtherPlayerMP['creeper9901'/2811212, l='MpServer', x=-255.50, y=59.00, z=244.50], EntityOtherPlayerMP['Jetai'/2779112, l='MpServer', x=-252.72, y=65.00, z=259.06], EntityOtherPlayerMP['QC3000'/2746794, l='MpServer', x=-255.75, y=59.00, z=245.53], EntityOtherPlayerMP['Sir_HecticDonut'/2790618, l='MpServer', x=-255.47, y=59.00, z=244.03], EntityOtherPlayerMP['skystorm10101'/2750256, l='MpServer', x=-270.50, y=59.00, z=256.72], EntityOtherPlayerMP['creeper9901'/2811212, l='MpServer', x=-255.50, y=59.00, z=244.50], EntityOtherPlayerMP['ThyCallMeSteve'/2813410, l='MpServer', x=-255.09, y=59.00, z=242.88], EntitySpider['Spider'/-2147483537, l='MpServer', x=-121.09, y=85.22, z=6170.13], EntityOtherPlayerMP['Siick_Era'/2750881, l='MpServer', x=-257.22, y=113.00, z=252.78]]
+	Retry entities: 0 total; []
+Stacktrace:
+	at net.minecraft.src.WorldClient.addWorldInfoToCrashReport(WorldClient.java:405)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2546)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:802)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.4.7
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_03, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 915526616 bytes (873 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 19635 (1099560 bytes; 1 MB) allocated, 1566 (87696 bytes; 0 MB) used
+	Suspicious classes: Start[net.minecraft.src.IPlayerUsage, MinecraftFakeLauncher, ThreadShutdown, ...]
+	IntCache: cache: 0, tcache: 0, allocated: 3, tallocated: 63
+	LWJGL: 2.4.2
+	OpenGL: GeForce GTX 560/PCIe/SSE2 GL version 4.2.0, NVIDIA Corporation
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Texture Pack: Default
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 1487 (83272 bytes; 0 MB) allocated, 112 (6272 bytes; 0 MB) used

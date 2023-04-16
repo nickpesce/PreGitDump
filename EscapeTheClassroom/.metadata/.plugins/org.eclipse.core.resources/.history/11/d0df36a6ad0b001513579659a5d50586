@@ -1,0 +1,56 @@
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+
+
+public class GuiOverlay {
+
+	private Game game;
+	public GuiOverlay(Game g) 
+	{
+		game = g;
+	}
+
+	public void render(Graphics g)
+	{
+		g.setColor(Color.BLACK);
+		g.drawString(game.getCurrentScene().name(), 0, Game.HEIGHT);
+		g.setColor(Color.GRAY);
+		for(int i = 0;i < 10; i++)
+		{
+			g.drawRect(230+(i*50), Game.HEIGHT - 80, 50, 50);
+		}
+		for(int i = 0; i < game.getInventory().size(); i++)
+		{
+			game.getInventory().get(i).drawIcon(g, 230+(i*50), Game.HEIGHT - 80, 50, 50);
+		}
+		String message = game.getMessage();
+		if(message != null)
+		{
+			g.setColor(new Color(180, 180, 180, 180));
+			g.fillRect(230, Game.HEIGHT - 125, 500, 40);
+			g.setColor(Color.BLACK);
+			g.setFont(new Font("ARIAL", Font.PLAIN, 18));
+			String[] lines = message.split("\n");
+			for(int i = 0; i < lines.length; i++)
+			{
+				g.drawString(lines[i], 230, Game.HEIGHT - 110 + (g.getFontMetrics().getHeight() * i));
+			}
+		}
+		if(game.draggedItem != null)
+		{
+			game.draggedItem.drawIcon(g, game.mouseX-25, game.mouseY-25, 50, 50);
+		}
+		if(game.displayedItem != null)
+		{
+			game.displayedItem.drawIcon(g, Game.WIDTH/2 - 200, 10, 400, 400);
+		}
+		if(game.sidePreview != null)
+		{
+			int x = Math.max(5, Math.min((Game.WIDTH * 4)/5 + 5, game.mouseX - (Game.WIDTH/10)-5));
+			int y = Math.max(5, Math.min((Game.HEIGHT * 4)/5 + 5, game.mouseY - (Game.HEIGHT/10)-5));
+			g.fillRoundRect(x-5, y-5, Game.WIDTH/5 + 10, Game.HEIGHT/5 + 10, 10, 10);
+			game.getScenes().get(game.sidePreview).render(g, x, y, Game.WIDTH/5, Game.HEIGHT/5);
+		}
+	}
+}

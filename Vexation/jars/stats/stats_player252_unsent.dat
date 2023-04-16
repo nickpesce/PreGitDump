@@ -1,0 +1,13 @@
+{
+  "user":{
+    "name":"diamondsplox",
+    "sessionid":"local"
+  },
+  "stats-change":[
+    {"1100":200},
+    {"1003":1},
+    {"2000":996},
+    {"2004":26}
+  ],
+  "checksum":"d55a9b4c42aa66ac1bfdc534224820b4"
+}

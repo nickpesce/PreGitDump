@@ -1,0 +1,212 @@
+import javax.swing.*;
+import java.awt.*;
+import java.util.*;
+/**
+ * @author Nick
+ *
+ */
+/**
+ * @author Nick
+ *
+ */
+public class Map extends JPanel
+{
+	java.util.List<Tetrino> tetrinos = new ArrayList<Tetrino>();
+	JFrame frame;
+	public Tetrino currentTetrino;
+	boolean playing = true;
+	
+	public Map(JFrame frame)
+	{
+		setLocation(0, 20);
+		this.frame = frame;
+		this.setVisible(true);
+		addTetrino();
+		addKeyListener(new MyKeyListener(this));
+		Timer timer = new Timer(this);
+		timer.startTimer();
+	}
+
+	public void addTetrino()
+	{
+		Random r = new Random();
+		//Tetrino tet = new Tetrino(r.nextInt(7), 5, 0);
+		Tetrino tet = new Tetrino(Tetrino.I, 0, 0);
+		currentTetrino = tet;
+		tetrinos.add(tet);
+	}
+
+	@Override
+	public void paintComponent(Graphics g)
+	{
+		//Draw Grid
+		for(int i = 0; i < 10; i++)
+		{
+			for(int j = 0; j < 20; j++)
+			{
+				g.setColor(Color.GRAY);
+				g.fillRect(i*Settings.tileSize, j*Settings.tileSize, Settings.tileSize, Settings.tileSize);
+				g.setColor(Color.BLACK);
+				g.drawRect(i*Settings.tileSize, j*Settings.tileSize, Settings.tileSize, Settings.tileSize);
+			}
+		}
+		//Draw Tetrinos
+		for(Tetrino tetrino : tetrinos)
+		{
+			tetrino.draw(g);
+		}
+	}
+
+	public void update() 
+	{
+		if(checkForBottomCollision())
+		{
+			checkAndClearRows();
+			addTetrino();
+		}
+		else
+			currentTetrino.moveDown();
+		repaint();
+	}
+
+	public boolean isCollidedOnLeft() 
+	{
+		for(Point p1 : currentTetrino.boxes)
+		{
+			if(p1.getX() == 0)
+			{
+				return true;
+			}
+			for(Tetrino t : tetrinos)
+			{
+				for(Point p2 : t.boxes)
+				{
+					if(currentTetrino != t)
+					{
+						if(p1.getX() - 1 == p2.getX() && p1.getY() == p2.getY())
+						{
+							return true;
+						}
+					}
+				}
+			}
+		}
+		return false;
+	}
+	
+	public boolean isCollidedOnRight()
+	{
+		for(Point p1 : currentTetrino.boxes)
+		{
+			if (p1.getX() == 9)
+			{
+				return true;
+			}
+			for(Tetrino t : tetrinos)
+			{
+				for(Point p2 : t.boxes)
+				{
+					if(currentTetrino != t)
+					{
+						if(p1.getX() + 1 == p2.getX() && p1.getY() == p2.getY())
+						{
+							return true;
+						}
+					}
+				}
+			}
+		}
+		return false;
+	}
+	
+	public boolean checkForBottomCollision()
+	{
+		for(Point p1 : currentTetrino.boxes)
+		{
+			//compare to floor
+			if(p1.getY() == 19)
+			{
+				return true;
+			}
+			
+			//compare to other tetrinos
+			for(Tetrino t : tetrinos)
+			{
+				for(Point p2 : t.boxes)
+				{
+					if(currentTetrino != t && p1.getY() + 1 == p2.getY() && (p1.getX() == p2.getX() || p1.getX() == p2.getX()))
+					{
+						return true;
+					}
+				}
+			}
+		}
+		return false;
+	}
+	
+	public void checkAndClearRows()
+	{
+		//<Row #, # of boxes>
+		HashMap<Integer, Integer> boxesPerRow = new HashMap<Integer, Integer>();
+		for(Tetrino t : tetrinos)
+		{
+			if(t != currentTetrino)
+			{
+				for(Point p1 : t.boxes)
+				{
+					int currentNumOfBoxes = 0;
+					if(boxesPerRow.get((int)p1.getY()) != null)
+						currentNumOfBoxes = boxesPerRow.get((int)p1.getY());
+					boxesPerRow.put((int) p1.getY(), currentNumOfBoxes + 1);
+					//System.out.println("ADDED: " + p1.getY() + " : " + boxesPerRow.get((int)p1.getY()));
+				}
+			}
+		}
+		
+		for(int i = 0; i < 20; i++)
+		{
+			int row = 19 - i;
+			//System.out.println(row + " : " + boxesPerRow.get(row));
+			if(boxesPerRow.get(row) != null && boxesPerRow.get(row) == 9)
+			{
+				clearRow(row);
+				checkAndClearRows();
+			}
+		}
+		
+	}
+	
+	private void clearRow(int row)
+	{
+		System.out.println("CLEAR!");
+		/*
+		for(Tetrino t : tetrinos)
+		{
+			for(int i = 0; i < t.boxes.size(); i++)
+			{
+				Point p = t.boxes.get(i);
+				if(p.getY() == row)
+				{
+					t.boxes.remove(i);
+				}
+			}
+		}
+		*/
+		//shiftAllDownAbove(row);
+	}
+	
+	private void shiftAllDownAbove(int row)
+	{
+		for(Tetrino t : tetrinos)
+		{
+			for(Point p : t.boxes)
+				for(int j = 0; j < row; j++)
+				{
+					if(p.getY() < row)
+					{
+						p.translate(0, -1);
+					}
+				}
+		}
+	}
+}

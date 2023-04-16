@@ -1,0 +1,22 @@
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+
+public class SceneWallSouth extends Scene {
+
+	public SceneWallSouth(Game game) 
+	{
+		super(game);
+		setBackground("WallSouth.jpg");
+		setSurroundings(Game.SceneName.ceiling, Game.SceneName.west, Game.SceneName.center, Game.SceneName.east);
+	}
+
+	@Override
+	public
+	void onClickBoxPress(int id) 
+	{	
+		super.onClickBoxPress(id);
+	}
+
+}

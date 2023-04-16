@@ -1,0 +1,61 @@
+---- Minecraft Crash Report ----
+// Hey, that tickles! Hehehe!
+
+Time: 2/21/13 4:36 PM
+Description: Unexpected error
+
+java.lang.NullPointerException
+	at net.minecraft.client.Minecraft.clickMouse(Minecraft.java:1365)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1912)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:861)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:786)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.client.Minecraft.clickMouse(Minecraft.java:1365)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 5 total; [EntityClientPlayerMP['diamondsplox'/2730360, l='MpServer', x=-262.70, y=60.62, z=250.31], EntityOtherPlayerMP['NanoZors'/2687463, l='MpServer', x=-248.56, y=59.00, z=259.25], EntityOtherPlayerMP['BLIZZARDSTORM98'/2686709, l='MpServer', x=-264.06, y=58.91, z=248.53], EntityOtherPlayerMP['pepsichic'/2718763, l='MpServer', x=-255.69, y=131.00, z=236.19], EntityOtherPlayerMP['LegendaryCraft_'/2710088, l='MpServer', x=-288.88, y=64.16, z=234.28]]
+	Chunk stats: MultiplayerChunkCache: 121
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-256,59,244), Chunk: (at 0,3,4 in -16,15; contains blocks -256,0,240 to -241,255,255), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 180737274 game time, 180890799 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 31 total; [EntityClientPlayerMP['diamondsplox'/2730360, l='MpServer', x=-262.70, y=60.62, z=250.31], EntityItemFrame['entity.ItemFrame.name'/68, l='MpServer', x=-322.06, y=169.50, z=256.50], EntityItemFrame['entity.ItemFrame.name'/69, l='MpServer', x=-322.06, y=169.50, z=257.50], EntityItemFrame['entity.ItemFrame.name'/70, l='MpServer', x=-322.06, y=169.50, z=258.50], EntityItemFrame['entity.ItemFrame.name'/71, l='MpServer', x=-325.94, y=169.50, z=258.50], EntityItemFrame['entity.ItemFrame.name'/64, l='MpServer', x=-325.50, y=169.50, z=254.06], EntityOtherPlayerMP['NanoZors'/2687463, l='MpServer', x=-248.56, y=59.00, z=259.25], EntityItemFrame['entity.ItemFrame.name'/65, l='MpServer', x=-322.50, y=169.50, z=254.06], EntityItemFrame['entity.ItemFrame.name'/66, l='MpServer', x=-322.06, y=169.50, z=255.50], EntityItemFrame['entity.ItemFrame.name'/67, l='MpServer', x=-325.94, y=169.50, z=255.50], EntityOtherPlayerMP['BLIZZARDSTORM98'/2686709, l='MpServer', x=-264.06, y=58.91, z=248.53], EntityOtherPlayerMP['NanoZors'/2687463, l='MpServer', x=-248.56, y=59.00, z=259.25], EntityWolf['Wolf'/2686715, l='MpServer', x=-262.53, y=59.00, z=243.50], EntityWolf['Wolf'/-2147483553, l='MpServer', x=1823.56, y=38.26, z=-3985.00], EntityItemFrame['entity.ItemFrame.name'/72, l='MpServer', x=-325.94, y=169.50, z=257.50], EntityItemFrame['entity.ItemFrame.name'/73, l='MpServer', x=-325.94, y=169.50, z=256.50], EntityItemFrame['entity.ItemFrame.name'/74, l='MpServer', x=-325.50, y=169.50, z=259.94], EntityItemFrame['entity.ItemFrame.name'/75, l='MpServer', x=-322.50, y=169.50, z=259.94], EntityOtherPlayerMP['BLIZZARDSTORM98'/2686709, l='MpServer', x=-264.06, y=58.91, z=248.53], EntityItemFrame['entity.ItemFrame.name'/156, l='MpServer', x=-234.50, y=54.50, z=279.94], EntityItemFrame['entity.ItemFrame.name'/157, l='MpServer', x=-235.50, y=54.50, z=279.94], EntityItemFrame['entity.ItemFrame.name'/158, l='MpServer', x=-236.50, y=54.50, z=279.94], EntityOtherPlayerMP['pepsichic'/2718763, l='MpServer', x=-255.69, y=131.00, z=236.19], EntityWolf['Wolf'/2722813, l='MpServer', x=-287.56, y=45.00, z=219.63], EntityOtherPlayerMP['LegendaryCraft_'/2710088, l='MpServer', x=-288.88, y=64.16, z=234.28], EntityOtherPlayerMP['LegendaryCraft_'/2710088, l='MpServer', x=-288.88, y=64.16, z=234.28], EntityOtherPlayerMP['pepsichic'/2718763, l='MpServer', x=-255.69, y=131.00, z=236.19], EntitySheep['Sheep'/-2147483550, l='MpServer', x=-7397.03, y=51.57, z=8653.63], EntityCow['Cow'/-2147483549, l='MpServer', x=1852.63, y=54.57, z=2319.59], EntityItemFrame['entity.ItemFrame.name'/63, l='MpServer', x=-324.50, y=169.50, z=254.06], EntityItemFrame['entity.ItemFrame.name'/62, l='MpServer', x=-323.50, y=169.50, z=254.06]]
+	Retry entities: 0 total; []
+Stacktrace:
+	at net.minecraft.src.WorldClient.addWorldInfoToCrashReport(WorldClient.java:405)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2547)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:809)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.4.7
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_03, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 894386320 bytes (852 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 21635 (1211560 bytes; 1 MB) allocated, 3 (168 bytes; 0 MB) used
+	Suspicious classes: Start[net.minecraft.src.IPlayerUsage, MinecraftFakeLauncher, ThreadShutdown, ...]
+	IntCache: cache: 0, tcache: 0, allocated: 3, tallocated: 63
+	LWJGL: 2.4.2
+	OpenGL: GeForce GTX 560/PCIe/SSE2 GL version 4.2.0, NVIDIA Corporation
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Texture Pack: Default
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 2286 (128016 bytes; 0 MB) allocated, 16 (896 bytes; 0 MB) used

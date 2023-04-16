@@ -1,0 +1,15 @@
+
+public class SceneShelf extends Scene {
+
+	public SceneShelf(Game game, boolean up, boolean down, boolean left,
+			boolean right) {
+		super(game, up, down, left, right);
+		// TODO Auto-generated constructor stub
+	}
+
+	public SceneShelf(Game game) {
+		super(game);
+		// TODO Auto-generated constructor stub
+	}
+
+}

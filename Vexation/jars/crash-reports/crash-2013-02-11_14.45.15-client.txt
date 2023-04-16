@@ -1,0 +1,60 @@
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 2/11/13 2:45 PM
+Description: Rendering screen
+
+java.lang.IllegalArgumentException: input == null!
+	at javax.imageio.ImageIO.read(Unknown Source)
+	at net.minecraft.src.RenderEngine.readTextureImage(RenderEngine.java:607)
+	at net.minecraft.src.RenderEngine.refreshTextures(RenderEngine.java:550)
+	at net.minecraft.src.GuiTexturePackSlot.elementClicked(GuiTexturePackSlot.java:39)
+	at net.minecraft.src.GuiSlot.drawScreen(GuiSlot.java:244)
+	at net.minecraft.src.GuiTexturePacks.drawScreen(GuiTexturePacks.java:132)
+	at net.minecraft.src.EntityRenderer.updateCameraAndRender(EntityRenderer.java:973)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:896)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:786)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at javax.imageio.ImageIO.read(Unknown Source)
+	at net.minecraft.src.RenderEngine.readTextureImage(RenderEngine.java:607)
+	at net.minecraft.src.RenderEngine.refreshTextures(RenderEngine.java:550)
+	at net.minecraft.src.GuiTexturePackSlot.elementClicked(GuiTexturePackSlot.java:39)
+	at net.minecraft.src.GuiSlot.drawScreen(GuiSlot.java:244)
+	at net.minecraft.src.GuiTexturePacks.drawScreen(GuiTexturePacks.java:132)
+
+-- Screen render details --
+Details:
+	Screen name: net.minecraft.src.GuiTexturePacks
+	Mouse location: Scaled: (188, 104). Absolute: (376, 270)
+	Screen size: Scaled: (427, 240). Absolute: (854, 480). Scale factor of 2
+Stacktrace:
+	at net.minecraft.src.EntityRenderer.updateCameraAndRender(EntityRenderer.java:973)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:896)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:786)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.4.7
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_03, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 891377992 bytes (850 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Suspicious classes: Start[net.minecraft.src.IPlayerUsage, MinecraftFakeLauncher, ThreadShutdown, ...]
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	LWJGL: 2.4.2
+	OpenGL: GeForce GTX 560/PCIe/SSE2 GL version 4.2.0, NVIDIA Corporation
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Texture Pack: Default
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: ~~ERROR~~ NullPointerException: null

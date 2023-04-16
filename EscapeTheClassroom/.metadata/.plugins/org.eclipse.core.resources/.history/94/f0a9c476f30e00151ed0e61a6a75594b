@@ -1,0 +1,76 @@
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+
+public class Item {
+
+	public static final int
+	S_KEY = 0,
+	SKREWDRIVER = 1,
+	PAPER = 2,
+	CLOSET_KEY = 3,
+	DOOR_KEY = 4,
+	WIRING_INSTRUCTIONS = 5,
+	PHONE_KEY = 6;
+	
+	private int id;
+	private BufferedImage icon;
+	
+	public Item(int id) 
+	{
+		this.id = id;
+		try{
+			switch(id)
+			{
+			case S_KEY:
+				icon = ImageIO.read(getClass().getResourceAsStream("SKey.jpg"));
+				break;
+			case SKREWDRIVER:
+				icon = ImageIO.read(getClass().getResourceAsStream("ItemScrewdriver.jpg"));
+				break;
+			case PAPER:
+				
+				break;
+			case CLOSET_KEY:
+				icon = ImageIO.read(getClass().getResourceAsStream("ItemDoorKey.png"));
+				break;
+			case DOOR_KEY:
+				icon = ImageIO.read(getClass().getResourceAsStream("ItemDoorKey.png"));
+				break;
+			case WIRING_INSTRUCTIONS:
+				break;
+			case PHONE_KEY:
+				icon = ImageIO.read(getClass().getResourceAsStream("ItemDoorKey.png"));
+				break;
+			}
+		}catch(IOException e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	public int getId() 
+	{
+		return id;
+	}
+
+	public BufferedImage getIcon()
+	{
+		return icon;
+	}
+
+	public void drawIcon(Graphics g, int x, int y, int width, int height) 
+	{
+		if(Game.DEBUG)
+		{
+			g.setColor(Color.GREEN);
+			g.fillOval(x, y, width, height);
+			g.drawString(""+id, x, y);
+		}
+		g.drawImage(icon, x, y, width, height, null);
+	}
+}

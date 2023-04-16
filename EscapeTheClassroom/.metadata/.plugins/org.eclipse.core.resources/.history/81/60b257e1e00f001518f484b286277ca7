@@ -1,0 +1,93 @@
+import java.awt.Graphics;
+
+
+public class Rectangle 
+{
+
+	int width, height;
+	Point lowerLeft, lowerRight, upperLeft, upperRight;
+	private int x, y;
+
+	public Rectangle(int x2, int y2, int width2, int height2)
+	{
+		this.x = x2;
+		this.y = y2;
+		this.height = height2;
+		this.width = width2;
+		this.fillDraw = false;
+		upperLeft = new Point(x2, y2);
+		lowerLeft = new Point(x2, y2+height2);
+		upperRight = new Point(x2+width2, y2);
+		lowerRight = new Point(x2+width2, y2+height2);
+	}
+	
+	public Rectangle(int x2, int y2, int width2, int height2, boolean fillDraw)
+	{
+		this(x2, y2, width2, height2);
+		this.fillDraw = fillDraw;
+	}
+	
+	public boolean intersects(Rectangle r)
+	{
+		return
+				lowerLeft.x <= r.lowerRight.x &&
+				lowerRight.x >= r.lowerLeft.x &&
+				lowerLeft.y >= r.upperLeft.y &&
+				upperLeft.y <= r.lowerLeft.y;
+	}
+	
+	public boolean contains(int x, int y)
+	{
+		return 
+				lowerLeft.x <= x && lowerRight.x >= x &&
+				lowerLeft.y >= y && upperLeft.y <= y;
+	}
+	
+	public int getX()
+	{
+		return x;
+	}
+	
+	public void setX(int x)
+	{
+		this.x = x;
+		upperLeft = new Point(x, y);
+		lowerLeft = new Point(x, y+height);
+		upperRight = new Point(x+width, y);
+		lowerRight = new Point(x+width, y+height);
+	}
+	
+	public int getY() {
+		return y;
+	}
+	
+	public void setY(int y)
+	{
+		this.y = y;
+		upperLeft = new Point(x, y);
+		lowerLeft = new Point(x, y+height);
+		upperRight = new Point(x+width, y);
+		lowerRight = new Point(x+width, y+height);
+	}
+	
+	public int getWidth()
+	{
+		return width;
+	}
+	
+	public void setWidth(int width)
+	{
+		this.width = width;
+	}
+	
+	public int getHeight() 
+	{
+		return height;
+	}
+	
+	public void setHeight(int height)
+	{
+		this.height = height;
+	}
+	
+}

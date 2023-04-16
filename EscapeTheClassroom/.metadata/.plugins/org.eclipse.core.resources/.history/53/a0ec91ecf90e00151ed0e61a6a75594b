@@ -1,0 +1,79 @@
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.event.KeyEvent;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+
+public class SceneMonitor extends Scene {
+
+	private String pass;
+	private String message;
+	private boolean hasSKey;
+	public SceneMonitor(Game game)
+	{
+		super(game);
+		//setBackground("Laptop.jpg");
+		setSurroundings(Game.SceneName.center, Game.SceneName.center, Game.SceneName.keyboard, Game.SceneName.center);
+		pass = "";
+		message = "Enter Password";
+		hasSKey = false;
+	}
+
+	@Override
+	public void onClickBoxPress(int id)
+	{
+		super.onClickBoxPress(id);
+		switch(id)
+		{
+		case LEFT:
+		case RIGHT:
+		case UP:
+		case DOWN:
+			pass = "";
+			break;
+		}
+	}
+	
+	@Override
+	public void keyPressed(int keyCode, char keyChar)
+	{
+		if(keyCode == KeyEvent.VK_ENTER)
+		{
+			if(pass.equals("password"))
+				message = "Access Granted!";
+			else
+				message = "Incorrect Password. Please Try Again.";
+			pass = "";
+		}
+		else if(keyCode == KeyEvent.VK_S && !hasSKey)
+		{
+			getGame().message("The keyboard is missing the \'S\' key!");
+			return;
+		}
+		else if(keyCode == KeyEvent.VK_BACK_SPACE)
+		{
+			if(pass.length() > 0)
+				pass = pass.substring(0, pass.length()-1);
+		}
+		else if(!(keyCode == KeyEvent.CHAR_UNDEFINED))
+			pass += keyChar;
+	}
+
+	@Override
+	public void render(Graphics g)
+	{
+		super.render(g);
+		g.setColor(Color.BLACK);
+		g.fillRect(0, 0, Game.WIDTH, Game.HEIGHT);
+		g.setColor(Color.WHITE);
+		g.drawString("Mrs. Donlon's Computer", (Game.WIDTH/2)-(g.getFontMetrics().stringWidth("Mrs. Donlon's Computer")/2), 30);
+		g.drawString(message, (Game.WIDTH/2)-(g.getFontMetrics().stringWidth(message)/2), 100);
+		g.drawString("PASSWORD: __________", (Game.WIDTH/2)-(g.getFontMetrics().stringWidth("PASSWORD: __________")/2), 200);
+		for(int i = 0; i < pass.length(); i++)
+		{
+			g.drawString("*", ((Game.WIDTH/2)-(g.getFontMetrics().stringWidth("__________") - g.getFontMetrics().stringWidth("PASSWORD: __________")/2))+i*8, 200);
+		}
+	}
+}

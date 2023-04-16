@@ -1,0 +1,262 @@
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.util.ArrayList;
+
+import javax.imageio.ImageIO;
+
+public abstract class Scene {
+
+	public static final int
+	LEFT = -1,
+	UP = -2,
+	RIGHT = -3,
+	DOWN = -4,
+	MESSAGE_BOX = -5; 
+	
+	private ArrayList<ClickBox> clickBoxes;
+	private BufferedImage background;
+	private Game game;
+	private Game.SceneName sceneUp, sceneDown, sceneLeft, sceneRight;
+	
+	/**
+	 * Makes a new scene with preset surroundings
+	 * @param game The game instance
+	 * @param up The scene above this scene
+	 * @param down The scene below this scene
+	 * @param left The scene to the left of this scene
+	 * @param right The scene to the right of this scene
+	 */
+	public Scene(Game game, boolean up, boolean down, boolean left, boolean right)
+	{
+		clickBoxes = new ArrayList<ClickBox>();
+		this.game = game;
+		int edgeWidth = 20;
+		if(left)
+			getClickBoxes().add(new ClickBox(0, 50, edgeWidth, Game.HEIGHT-100, LEFT));
+		if(up)
+			getClickBoxes().add(new ClickBox(50, 0, Game.WIDTH - 100, edgeWidth, UP));
+		if(right)
+			getClickBoxes().add(new ClickBox(Game.WIDTH-edgeWidth, 50, edgeWidth, Game.HEIGHT-100, RIGHT));
+		if(down)
+			getClickBoxes().add(new ClickBox(50, Game.HEIGHT-edgeWidth, Game.WIDTH-100, edgeWidth, DOWN));
+		getClickBoxes().add(new ClickBox(230, Game.HEIGHT - 125, 500, 40, MESSAGE_BOX));
+	}
+	
+	/**
+	 * Makes a new scene with no surrounding scenes
+	 * @param game The game instance
+	 */
+	public Scene(Game game)
+	{
+		this(game, true, true, true, true);
+	}
+	
+	public ArrayList<ClickBox> getClickBoxes()
+	{
+		return clickBoxes;
+	}
+	
+	public void setClockBoxes(ArrayList<ClickBox> boxes)
+	{
+		clickBoxes = boxes;
+	}
+	
+	public Game getGame()
+	{
+		return game;
+	}
+
+	/**
+	 * Draws the scene with a specific location (top left) and size
+	 * @param g Graphics instance
+	 * @param x
+	 * @param y
+	 * @param width
+	 * @param height
+	 */
+	public void render(Graphics g, int x, int y, int width, int height)
+	{
+		if(getBackground()!=null)
+			g.drawImage(getBackground(), x, y, width, height, null);
+	} 
+	
+	/**
+	 * Draws the scene full screen
+	 * @param g The graphics instance
+	 */
+	public void render(Graphics g)
+	{
+		render(g, 0, 0, Game.WIDTH, Game.HEIGHT);
+		if(game.DEBUG)
+		{
+			g.setColor(Color.BLUE);
+			for(ClickBox cb : getClickBoxes())
+			{
+				cb.draw(g);
+			}
+		}
+	}
+	
+	/**
+	 * Adds a clickbox to the scene.
+	 * @param x
+	 * @param y
+	 * @param width
+	 * @param height
+	 * @param id Id of the clickbox used in onClickBoxPress. 
+	 */
+	public void addClickBox(int x, int y, int width, int height, int id)
+	{
+		clickBoxes.add(new ClickBox(x, y, width, height, id));
+	}
+	
+	public void onEnter()
+	{
+		
+	}
+
+	public void onLeave()
+	{
+		
+	}
+	
+	public void mousePressed(int x, int y)
+	{
+		for(ClickBox cb : clickBoxes)
+		{
+			if(cb.contains(x, y))
+				onClickBoxPress(cb.getId());
+		}
+	}
+	
+	public void onClickBoxHover(int id)
+	{
+		Game.SceneName preview = null;
+		switch(id)
+		{
+		case UP:
+			preview = sceneUp;
+			break;
+		case LEFT:
+			preview = sceneLeft;
+			break;
+		case DOWN: 
+			preview = sceneDown;
+			break;
+		case RIGHT:
+			preview = sceneRight;
+			break;
+		default:
+		}
+		game.setScenePreview(preview);
+	}
+	
+	public void mouseMoved(int x, int y)
+	{
+		game.setScenePreview(null);
+		for(ClickBox cb : clickBoxes)
+		{
+			if(cb.contains(x, y))
+			{
+				onClickBoxHover(cb.getId());
+			}
+		}
+		//int cursor = Cursor.DEFAULT_CURSOR;
+
+		//game.getCanvas().setCursor(Cursor.getPredefinedCursor(cursor));
+	}
+
+	/**
+	 * Sets the surrounding scenes. The surroundings will be used for the four clickboxes 
+	 * on the edges of the screen and the previews of those scenes.
+	 * @param up
+	 * @param right
+	 * @param down
+	 * @param left
+	 */
+	public void setSurroundings(Game.SceneName up, Game.SceneName right, Game.SceneName down, Game.SceneName left)
+	{
+		sceneUp = up;
+		sceneRight = right;
+		sceneDown = down;
+		sceneLeft = left;
+	}
+	
+	/**
+	 * Called when a clickbox is pressed.
+	 * @param id The id of the clickbox.
+	 */
+	public void onClickBoxPress(int id)
+	{
+		switch(id)
+		{
+		case LEFT:
+			getGame().switchScene(sceneLeft);
+			break;
+		case UP:
+			getGame().switchScene(sceneUp);
+			break;
+		case RIGHT:
+			getGame().switchScene(sceneRight);
+			break;
+		case DOWN :
+			getGame().switchScene(sceneDown);
+			break;
+		case MESSAGE_BOX:
+			game.removeMessage();
+		}
+	}
+	
+	/**
+	 * Called when an item is dragged from the inventory into a click box.
+	 * @param item The item that was dragged.
+	 * @param clickBoxId The id of the click box that the item was dragged into.
+	 */
+	public void itemDroppedInBox(Item item, int clickBoxId)
+	{
+	}
+
+	public void keyPressed(int keyCode, char c) 
+	{		
+	}
+
+	public BufferedImage getBackground() {
+		return background;
+	}
+
+	public void setBackground(BufferedImage background) 
+	{
+		this.background = background;
+	}
+
+	/**
+	 * Sets the background image using the path to the file.
+	 * @param file The path to the file
+	 */
+	public void setBackground(String file)
+	{
+		try{
+			background = ImageIO.read(getClass().getResourceAsStream(file));
+		}catch(IOException e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * Called when an item is dropped anywhere on the screen. Will call itemDroppedInClickbox if dropped in clickbox
+	 * @param x
+	 * @param y
+	 * @param draggedItem
+	 */
+	public void itemDropped(int x, int y, Item draggedItem)
+	{
+		for(ClickBox cb : clickBoxes)
+		{
+			if(cb.contains(x, y))
+				itemDroppedInBox(draggedItem, cb.getId());
+		}
+	}
+}

@@ -1,0 +1,17 @@
+
+public class SceneKeyboard extends Scene {
+
+	public SceneKeyboard(Game game)
+	{
+		super(game);
+		setBackground("Keyboard.jpg");
+	}
+
+	@Override
+	public void onClickBoxPress(int id)
+	{		
+		super.onClickBoxPress(id);
+
+	}
+
+}

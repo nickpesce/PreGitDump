@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;Scene.background&apos; in &apos;Scene&apos;&#x0D;&#x0A;- Original project: &apos;EscapeTheClassroom&apos;&#x0D;&#x0A;- Original element: &apos;Scene.background&apos;&#x0D;&#x0A;- Getter method name: &apos;getBackground&apos;&#x0D;&#x0A;- Setter method name: &apos;setBackground&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;background&apos;" flags="589830" getter="getBackground" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;{Scene.java[Scene^background" insertion="7" setter="setBackground" stamp="1431469369577" version="1.0" visibility="1"/>
+</session>

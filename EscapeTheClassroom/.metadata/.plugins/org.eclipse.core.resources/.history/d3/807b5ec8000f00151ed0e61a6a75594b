@@ -1,0 +1,82 @@
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+
+public class ScenePhone extends Scene {
+
+	private boolean opened, locked;
+	private Item sKey;
+	private BufferedImage openedImage;
+	public static final int
+	PHONE_BOX = 0,
+	S_KEY = 1;
+	public ScenePhone(Game game) 
+	{
+		super(game);
+		try {
+			openedImage = ImageIO.read(getClass().getResourceAsStream("PhoneOpen.jpg"));
+			setBackground(ImageIO.read(getClass().getResourceAsStream("PhoneClosed.jpg")));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		opened = false;
+		addClickBox(Game.WIDTH/2 - 150,  40,  300,  400, PHONE_BOX);
+		addClickBox(575,  45, 50, 50, S_KEY);
+		setSurroundings(Game.SceneName.north, Game.SceneName.north, Game.SceneName.north, Game.SceneName.north);
+		sKey = new Item(Item.S_KEY);
+	}
+
+	@Override
+	public void itemDroppedInBox(Item item, int clickBoxId) 
+	{
+		super.itemDroppedInBox(item, clickBoxId);
+		switch(item.getId())
+		{
+		case Item.DOOR_KEY:
+		case Item.CLOSET_KEY:
+			getGame().message("The key does not fit the lock.");
+			break;
+		case Item.PHONE_KEY:
+			getGame().message("The phone box is unlocked!");
+			locked = false;
+			break;
+		}
+	}
+	@Override
+	public void onClickBoxPress(int id)
+	{
+		super.onClickBoxPress(id);
+		switch(id)
+		{
+		case PHONE_BOX:
+			if(!opened && !locked)
+			{
+				setBackground(openedImage);
+				opened = !opened;
+				getGame().message("The phone box opened!");
+			}
+			break;
+		case S_KEY:
+			if(sKey != null)
+			{
+				getGame().getInventory().add(sKey);
+				sKey = null;
+			}
+			break;
+		}
+	}
+	
+	@Override
+	public void render(Graphics g)
+	{
+		super.render(g);
+		if(opened && sKey != null)
+		{
+			g.drawImage(sKey.getIcon(), 575,  45, 50, 50, null);
+		}
+	}
+
+}

@@ -1,0 +1,33 @@
+import java.awt.image.BufferedImage;
+import java.io.File;
+
+import javax.imageio.ImageIO;
+
+
+public class SceneScanner extends Scene{
+
+	public final static int
+	PAPER = 0;
+	BufferedImage openedImage;
+	public SceneScanner(Game game) 
+	{
+		super(game);
+		addClickBox(100, 100, 500, 500, PAPER);
+		setBackground("ScannerClosed.jpg");
+		openedImage = ImageIO.read(new File("ScannerOpened.jpg"));
+		setSurroundings(Game.SceneName.east, Game.SceneName.east, Game.SceneName.east, Game.SceneName.east);
+	}
+	
+	public void onClickBoxPress(int id)
+	{
+		super.onClickBoxPress(id);
+		switch(id)
+		{
+		case PAPER:
+			if(!getGame().inventoryContains(Item.PAPER))
+				getGame().getInventory().add(new Item(Item.PAPER));
+			break;
+		}
+	}
+
+}

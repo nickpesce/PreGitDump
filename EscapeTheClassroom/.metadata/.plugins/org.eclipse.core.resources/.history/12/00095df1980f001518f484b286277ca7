@@ -1,0 +1,13 @@
+
+public class SceneShelf extends Scene {
+
+	private final static int
+	PAPER = 0;
+	public SceneShelf(Game game) 
+	{
+		super(game);
+		setBackground("Shelf.jpg");
+		//addClickBox();
+	}
+
+}

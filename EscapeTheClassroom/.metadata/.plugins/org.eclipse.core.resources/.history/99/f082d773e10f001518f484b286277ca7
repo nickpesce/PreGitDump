@@ -1,0 +1,42 @@
+
+public class GameLoop {
+
+	private Game game;
+	private boolean running;
+	
+	public GameLoop(Game game) 
+	{
+		this.game = game;
+	}
+
+	/**
+	 * Starts the gameloop. Will run at 60tps.
+	 */
+	public void start()
+	{
+		running = true;
+		new Thread(new Runnable(){
+			@Override
+			public void run()
+			{
+				while(running)
+				{
+					long s = System.currentTimeMillis();
+					game.repaint();
+					if(game.getCurrentScene() != null)
+						game.getScenes().get(game.getCurrentScene()).update();
+					try {
+						Thread.sleep(16 - (System.currentTimeMillis() - s));
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+				}
+			}
+		}).start();
+	}
+	
+	public void stop()
+	{
+		running = false;
+	}
+}

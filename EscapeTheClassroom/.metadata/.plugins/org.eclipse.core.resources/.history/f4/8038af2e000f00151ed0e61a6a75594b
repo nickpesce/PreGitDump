@@ -1,0 +1,31 @@
+
+
+public class SceneWallSouth extends Scene {
+
+	public static final int
+	PHONE_KEY = 0;
+	
+	private Item phoneKey;
+	
+	public SceneWallSouth(Game game) 
+	{
+		super(game);
+		setBackground("WallSouth.jpg");
+		setSurroundings(Game.SceneName.ceiling, Game.SceneName.west, Game.SceneName.center, Game.SceneName.east);
+		phoneKey = new Item(Item.PHONE_KEY);
+	}
+
+	@Override
+	public
+	void onClickBoxPress(int id) 
+	{	
+		super.onClickBoxPress(id);
+		switch(id)
+		{
+		case PHONE_KEY:
+			getGame().getInventory().add(phoneKey);
+			break;
+		}
+	}
+
+}

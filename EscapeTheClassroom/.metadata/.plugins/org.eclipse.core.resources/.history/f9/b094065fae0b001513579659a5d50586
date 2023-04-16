@@ -1,0 +1,26 @@
+
+public class SceneCenter extends Scene {
+
+	public static final int
+	MONITOR = 0;
+	public SceneCenter(Game game) 
+	{
+		super(game, false, true, true, true);
+		addClickBox(350, 200, 100, 100, MONITOR);
+		setBackground("Center.jpg");
+		setSurroundings(null, Game.SceneName.west, Game.SceneName.north, Game.SceneName.east);
+	}
+
+	@Override
+	public void onClickBoxPress(int id) 
+	{
+		super.onClickBoxPress(id);
+		switch(id)
+		{
+		case MONITOR:
+			getGame().switchScene(Game.SceneName.monitor);
+			break;
+		}
+	}
+
+}
